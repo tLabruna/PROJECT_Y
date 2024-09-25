@@ -151,11 +151,11 @@ def parse_rest_available_string(rest_available_str):
 
 
 def build_system_prompt(retrieved_restaurants):
-    prompt = f"""{TEMPLATES["multiwoz"]}\nKB:\n"""
+    prompt = f"""{TEMPLATES['multiwoz']}\nKB:\n"""
     for rest in retrieved_restaurants:
-        prompt += f"- Name: {rest["name"]}, Area: {rest["area"]}, Price: {rest["pricerange"]}, Food: {rest["food"]}, Address: {rest["address"]}, Postcode: {rest["postcode"]}, Phone: {rest["phone"]}"
+        prompt += f"- Name: {rest['name']}, Area: {rest['area']}, Price: {rest['pricerange']}, Food: {rest['food']}, Address: {rest['address']}, Postcode: {rest['postcode']}, Phone: {rest['phone']}"
         if "introduction" in rest:
-            prompt += f", Description: {rest["introduction"]}"
+            prompt += f", Description: {rest['introduction']}"
         prompt += "\n"
     prompt = prompt[:-1]
     return prompt

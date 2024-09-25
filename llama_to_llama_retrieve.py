@@ -4,7 +4,7 @@ from build_prompt import kb_to_prompt, instructions_to_prompt
 import json
 from utils import load_json
 
-USE_ALL_KB = False
+USE_ALL_KB = True
 USE_MWOZ_INSTRUCTIONS = True
 VERBOSE = False
 
