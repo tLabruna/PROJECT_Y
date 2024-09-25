@@ -2,45 +2,51 @@
 from utils import load_json, parse_input_string
 from templates import TEMPLATES
 
-def build_slot_extraction_prompt(input_user):
-    return f"""Given the following message, extract and return the restaurant details in the format:
+def build_slot_extraction_prompt():
+    return f"""You have access to the following function:
 
+Use the function 'query_restaurant_kb' to 'Retrieve restaurant details based on specified name, food type, area, or price range':
 {{
-    "name": "x",
-    "food": "y",
-    "area": "z",
-    "price": "j"
+  name: "query_restaurant_kb",
+  description: "Retrieve restaurant details based on specified name, food type, area, or price range",
+  parameters: {{
+    type: "object",
+    properties: {{
+      name: {{
+        type: "string",
+        description: "The name of the restaurant (if provided)",
+      }},
+      food: {{
+        type: "string",
+        description: "Type of food (e.g., italian, mexican, chinese, etc.)",
+      }},
+      area: {{
+        type: "string",
+        description: "Location area (e.g., north, south, east, west, or centre)",
+      }},
+      pricerange: {{
+        type: "string",
+        description: "Price range of the restaurant (e.g., cheap, moderate, expensive)",
+      }},
+    }},
+    required: [],
+  }},
 }}
 
-Extract the values only if explicitely mentioned in the message, leave it empty string otherwise.
+Map the values from the message for 'food', 'area', and 'price' fields to the following options:
 
-Try to map the values for 'food', 'area', and 'price' fields to one of the following options:
+- Food types: italian, international, indian, chinese, modern european, european, british, gastropub, mexican, lebanese, vietnamese, spanish, french, japanese, portuguese, korean, turkish, asian oriental, african, mediterranean, seafood, thai, north american
+- Areas: north, south, centre, east, west
+- Price ranges: cheap, moderate, expensive
 
-food:
-italian, international, indian, chinese, modern european, european, british, gastropub, mexican, lebanese, vietnamese, spanish, french, japanese, portuguese, korean, turkish, asian oriental, african, mediterranean, seafood, thai, north american
+For example, if the message says "high price," map it to "expensive." If the term can be mapped to one of these values, use the corresponding option.
 
-area:
-north, south, centre, east, west
+If the message explicitly requires querying the restaurant details (e.g., mentioning restaurant names or attributes such as food type or price), call the function in the following format:
 
-price:
-cheap, expensive, moderate
+<function=query_restaurant_kb>{{name": "x", "food": "y", "area": "z", "pricerange": "j"}}</function>
 
-If the message contains a term that can be mapped to one of these values, use the corresponding option. For example, if the message says "high price", map it to "expensive". 
-
-Example:
-If the message is "I'm looking for a Mexican restaurant called El Patio in the downtown area with an affordable price", the output should be:
-{{
-    "name": "El Patio",
-    "food": "mexican",
-    "area": "",
-    "price": "cheap"
-}}
-
-Return only the JSON, nothing else.
-
-Message: "{input_user}"
-
-Extracted Details as JSON: """
+However, if the message does not require querying the restaurant knowledge base, simply provide the direct response to the user.
+"""
 
 def build_slot_extraction_prompt_eval(input_system):
     return f"""Given the following message, extract and return the restaurant details in the format:
@@ -59,11 +65,11 @@ def build_slot_extraction_prompt_eval(input_system):
     ...
 ]
 
-If the message contains information for more than one restaurant, return each restaurant's details as a separate dictionary inside the list.
+If the message contains information for more than one restaurant or multiple values for the same slot (e.g., multiple types of food, multiple areas, etc.), return each set of details as a separate dictionary inside the list. For example, if multiple types of food are mentioned, each food type should appear in its own dictionary entry, even if the other information remains the same.
 
-Extract the values only if explicitly mentioned in the message, leave it as an empty string otherwise.
+**Only extract values that are explicitly mentioned in the message. Do not infer or assume any values. If a specific slot is not mentioned, leave it as an empty string.**
 
-Try to map the values for 'food', 'area', and 'price' fields to one of the following options:
+Try to map the values for 'food', 'area', and 'price' fields to one of the following options, but only if they are explicitly mentioned:
 
 food:
 italian, international, indian, chinese, modern european, european, british, gastropub, mexican, lebanese, vietnamese, spanish, french, japanese, portuguese, korean, turkish, asian oriental, african, mediterranean, seafood, thai, north american
@@ -79,26 +85,46 @@ If the message contains a term that can be mapped to one of these values, use th
 Name is the name of the restaurant. 
 Address is the address of the restaurant.
 Phone is the phone number of the restaurant.
-Poscode is the postcode of the restaurant.
+Postcode is the postcode of the restaurant.
 Choice is the number of restaurants that the system says it found, but leave it as an empty string for individual restaurants unless a specific number is mentioned in the message.
 
 Example:
-If the message is "Pizza Hut Cherry Hinton has moderately priced. Taj Tandoori instead is more expensive", the output should be:
+If the message is "On the south end, in the expensive price range, we have Mexican, Italian, Indian, and Chinese foods to choose from", the output should be:
 [
     {{
-        "name": "Pizza Hut Cherry Hinton",
-        "food": "",
-        "area": "",
-        "price": "moderate",
+        "name": "",
+        "food": "mexican",
+        "area": "south",
+        "price": "expensive",
         "address": "",
         "phone": "",
         "postcode": "",
         "choice": ""
     }},
     {{
-        "name": "Taj Tandoori",
-        "food": "",
-        "area": "",
+        "name": "",
+        "food": "italian",
+        "area": "south",
+        "price": "expensive",
+        "address": "",
+        "phone": "",
+        "postcode": "",
+        "choice": ""
+    }},
+    {{
+        "name": "",
+        "food": "indian",
+        "area": "south",
+        "price": "expensive",
+        "address": "",
+        "phone": "",
+        "postcode": "",
+        "choice": ""
+    }},
+    {{
+        "name": "",
+        "food": "chinese",
+        "area": "south",
         "price": "expensive",
         "address": "",
         "phone": "",
@@ -112,7 +138,6 @@ Return only the JSON, nothing else.
 Message: "{input_system}"
 
 Extracted Details as JSON: """
-
 
 def build_intent_extraction_prompt_eval(input_system):
     return f"""Given a message from a system designed to help users find restaurants, determine if the system is stating that there are no restaurants meeting the user criteria.

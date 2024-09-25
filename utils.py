@@ -41,3 +41,40 @@ def parse_input_string(input_str, role):
         parsed_list.append(parsed_dict)
     
     return parsed_list
+
+def parse_input_string_function(input_str, role):
+    # Use a regex to extract the <function=...>{...}</function> structure
+    function_pattern = r'<function=[a-zA-Z_]+>(\{[\s\S]*?\})<\/function>'
+    function_match = re.search(function_pattern, input_str)
+
+    # If the structure is not found, return False
+    if not function_match:
+        function_pattern = r'<function=[a-zA-Z_]+>(\{[\s\S]*?\})$'
+        function_match = re.search(function_pattern, input_str)
+        if not function_match:
+            return False
+
+    # Extract the JSON part from the function structure
+    json_str = function_match.group(1)
+
+    try:
+        # Parse the extracted JSON string into a dictionary
+        parsed_dict = json.loads(json_str)
+    except json.JSONDecodeError:
+        return None  # If JSON is malformed, return None
+    
+    # Ensure all necessary keys are present, fill with empty strings if missing
+    if role == "system":
+        expected_keys = ["name", "food", "area", "pricerange", "address", "postcode", "phone", "choice"]
+    else:
+        expected_keys = ["name", "food", "area", "pricerange"]
+
+    for key in expected_keys:
+        if key not in parsed_dict:
+            parsed_dict[key] = ""
+
+    # Optional: Renaming "price" to "pricerange" if needed
+    if "price" in parsed_dict:
+        parsed_dict["pricerange"] = parsed_dict.pop("price")
+
+    return parsed_dict
