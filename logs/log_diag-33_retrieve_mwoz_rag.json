@@ -1,0 +1,42 @@
+[
+    {
+        "turn": 0,
+        "role": "user",
+        "text": "I'm looking for a restaurant in Cambridge that serves international food. I don't mind the price range. What's the first option you have?"
+    },
+    {
+        "turn": 1,
+        "role": "system",
+        "text": "I've got just the place for you. Have you considered trying The Varsity Restaurant? It's located in the heart of Cambridge, on Saint Andrews Street, and serves a fantastic selection of international cuisine. Their menu is moderate in price, so you can expect to pay around what you'd normally expect for a mid-range meal. Would you like to make a reservation? I can give you a reservation number - let's say 12345. Would you like to reserve a table?"
+    },
+    {
+        "turn": 2,
+        "role": "user",
+        "text": "That sounds good, but I'm not sure about The Varsity Restaurant. Is there anything else you can recommend? I'd like to explore other options."
+    },
+    {
+        "turn": 3,
+        "role": "system",
+        "text": "There's another great option in Cambridge that serves international cuisine. Have you thought about trying the Bloomsbury Restaurant at the Crowne Plaza Hotel? It's also located in the centre of town, on Downing Street. They offer a similar style of food to The Varsity Restaurant, and their signature dish is the coconut and red chilli monkfish. Would you like to make a reservation? I can give you a reservation number - let's say 67890."
+    },
+    {
+        "turn": 4,
+        "role": "user",
+        "text": "I'd like to know more about the Bloomsbury Restaurant. What's the address and phone number?"
+    },
+    {
+        "turn": 5,
+        "role": "system",
+        "text": "The Bloomsbury Restaurant is located at the Crowne Plaza Hotel, 20 Downing Street, in the heart of Cambridge's city centre. You can reach them by phone at 08719429180."
+    },
+    {
+        "turn": 6,
+        "role": "user",
+        "text": "Thank you for the information. I think I'll consider the Bloomsbury Restaurant. \n\nEND"
+    },
+    {
+        "turn": 7,
+        "role": "system",
+        "text": "It was my pleasure to assist you. I hope you have a great dining experience at the Bloomsbury Restaurant. If you need any more information or have any other questions, feel free to ask. Have a great day in Cambridge!"
+    }
+]

@@ -1,0 +1,94 @@
+[
+    [
+        {
+            "role": "system",
+            "content": "You are a turist in the city of Cambridge and you are looking for a restaurant to dine in. Strictly follow the instructions given to you on the criteria by which looking for the restaurant. You don't need to follow all the instructions at once, instead follow them as the conversation continues. Be very brief, and go straight to the point. At the end, thank the system and say goodbye. When the conversation is over, after the farewell, return \"END\" (in caps lock).\n\nInstruction:\nTask 09567: You are looking for and it should serve international food. You don't care about the price range. Don't go for the first venue the system offers you, ask if there is anything else. Make sure you get the address and phone number."
+        },
+        {
+            "role": "user",
+            "content": "Hi, I'm here to help you find a restaurant."
+        },
+        {
+            "role": "assistant",
+            "content": "I'm looking for a restaurant in Cambridge that serves international food. I don't have a budget in mind. Can you suggest a few options?"
+        },
+        {
+            "role": "user",
+            "content": "I'd be happy to help you find a great international restaurant in Cambridge. Here are a few options:\n\n1. The Varsity Restaurant - 35 Saint Andrews Street, City Centre. They serve international cuisine and have a moderate price range.\n2. Bloomsbury Restaurant - Crowne Plaza Hotel, 20 Downing Street, City Centre. They offer international food and have a signature dish of coconut and red chilli monkfish. Also, moderate price range.\n3. Little Restaurant Cherry and - 106 Regent Street, City Centre. They serve international cuisine and have a moderate price range.\n4. The Two - 35 Saint Andrews Street, City Centre. They offer international food and have a moderate price range.\n5. Yu Cookhouse - 12 Bridge Street, City Centre. They serve international cuisine and have a moderate price range.\n6. Jinling House - 12 Norfolk Street, City Centre. They offer international food and have a moderate price range.\n\nWould you like to reserve a table at one of these restaurants? I can give you a random reservation number. Let me know!"
+        },
+        {
+            "role": "assistant",
+            "content": "I'm not interested in the first option, The Varsity Restaurant. Are there any other international restaurants in Cambridge that you can suggest?"
+        },
+        {
+            "role": "user",
+            "content": "Here are the remaining international restaurant options in Cambridge:\n\n1. Bloomsbury Restaurant - Crowne Plaza Hotel, 20 Downing Street, City Centre. They offer international food and have a signature dish of coconut and red chilli monkfish. Also, moderate price range.\n2. Little Restaurant Cherry and - 106 Regent Street, City Centre. They serve international cuisine and have a moderate price range.\n3. The Two - 35 Saint Andrews Street, City Centre. They offer international food and have a moderate price range.\n4. Yu Cookhouse - 12 Bridge Street, City Centre. They serve international cuisine and have a moderate price range.\n5. Jinling House - 12 Norfolk Street, City Centre. They offer international food and have a moderate price range.\n\nWould you like to reserve a table at one of these restaurants? I can give you a random reservation number. Let me know! Your reservation number would be: R-1234."
+        },
+        {
+            "role": "assistant",
+            "content": "I'd like to see more options. Can you give me a few more international restaurants in Cambridge?"
+        },
+        {
+            "role": "user",
+            "content": "Here are the remaining international restaurant options in Cambridge:\n\n1. Bloomsbury Restaurant - Crowne Plaza Hotel, 20 Downing Street, City Centre. They offer international food and have a signature dish of coconut and red chilli monkfish. Also, moderate price range.\n2. Little Restaurant Cherry and - 106 Regent Street, City Centre. They serve international cuisine and have a moderate price range.\n3. The Two - 35 Saint Andrews Street, City Centre. They offer international food and have a moderate price range.\n4. Yu Cookhouse - 12 Bridge Street, City Centre. They serve international cuisine and have a moderate price range.\n5. Jinling House - 12 Norfolk Street, City Centre. They offer international food and have a moderate price range.\n\nThese are all the international restaurants in the Knowledge Base. If you'd like to reserve a table at one of these restaurants, I can give you a random reservation number. Let me know! Your reservation number would be: R-1234."
+        },
+        {
+            "role": "assistant",
+            "content": "I'm still looking for more options. Can you give me their phone numbers and addresses, so I can research further?"
+        }
+    ],
+    [
+        {
+            "role": "system",
+            "content": "You are the Cambridge TownInfo Centre, a system designed to help users maximize their experience in the city of Cambridge. Use a friendly and conversational tone while providing helpful and informative responses. All the information you provide must strictly rely on the Knowledge Base that you are provided with. If no Knowledge Base has been provided, don't give any domain information, and just say that you can't help. Ensure that your answers are accurate, relevant, and tailored to the user's needs. When you find the restaurant to reserve, give a random reservation number to the user. Be short and concise."
+        },
+        {
+            "role": "user",
+            "content": "I'm looking for a restaurant in Cambridge that serves international food. I don't have a budget in mind. Can you suggest a few options?"
+        },
+        {
+            "role": "system",
+            "content": "Your answer should strictly rely to the following Knowledge Base.\n\nKnowledge Base:\n- {\"address\": \"35 Saint Andrews Street City Centre\", \"area\": \"centre\", \"food\": \"international\", \"name\": \"the varsity restaurant\", \"phone\": \"01223356060\", \"postcode\": \"cb23ar\", \"pricerange\": \"moderate\"}\n- {\"address\": \"Crowne Plaza Hotel 20 Downing Street\", \"area\": \"centre\", \"food\": \"international\", \"name\": \"bloomsbury restaurant\", \"phone\": \"08719429180\", \"postcode\": \"cb23dt\", \"pricerange\": \"moderate\", \"signature\": \"coconut and red chilli monkfish\"}\n- {\"address\": \"106 Regent Street City Centre\", \"area\": \"centre\", \"food\": \"international\", \"name\": \"little restaurant cherry and\", \"phone\": \"7773986374\", \"postcode\": \"cb21sj\", \"pricerange\": \"moderate\"}\n- {\"address\": \"35 Saint Andrews Street City Centre\", \"area\": \"centre\", \"food\": \"international\", \"name\": \"the two\", \"phone\": \"2698592220\", \"postcode\": \"cb21ab\", \"pricerange\": \"moderate\"}\n- {\"address\": \"12 Bridge Street City Centre\", \"area\": \"centre\", \"food\": \"international\", \"name\": \"yu cookhouse\", \"phone\": \"8876261241\", \"postcode\": \"cb21db\", \"pricerange\": \"moderate\"}\n- {\"address\": \"12 Norfolk Street City Centre\", \"area\": \"centre\", \"food\": \"international\", \"name\": \"jinling house\", \"phone\": \"7697787170\", \"postcode\": \"cb23dt\", \"pricerange\": \"moderate\"}\n"
+        },
+        {
+            "role": "assistant",
+            "content": "I'd be happy to help you find a great international restaurant in Cambridge. Here are a few options:\n\n1. The Varsity Restaurant - 35 Saint Andrews Street, City Centre. They serve international cuisine and have a moderate price range.\n2. Bloomsbury Restaurant - Crowne Plaza Hotel, 20 Downing Street, City Centre. They offer international food and have a signature dish of coconut and red chilli monkfish. Also, moderate price range.\n3. Little Restaurant Cherry and - 106 Regent Street, City Centre. They serve international cuisine and have a moderate price range.\n4. The Two - 35 Saint Andrews Street, City Centre. They offer international food and have a moderate price range.\n5. Yu Cookhouse - 12 Bridge Street, City Centre. They serve international cuisine and have a moderate price range.\n6. Jinling House - 12 Norfolk Street, City Centre. They offer international food and have a moderate price range.\n\nWould you like to reserve a table at one of these restaurants? I can give you a random reservation number. Let me know!"
+        },
+        {
+            "role": "user",
+            "content": "I'm not interested in the first option, The Varsity Restaurant. Are there any other international restaurants in Cambridge that you can suggest?"
+        },
+        {
+            "role": "system",
+            "content": "Your answer should strictly rely to the following Knowledge Base.\n\nKnowledge Base:\n- {\"address\": \"35 Saint Andrews Street City Centre\", \"area\": \"centre\", \"food\": \"international\", \"name\": \"the varsity restaurant\", \"phone\": \"01223356060\", \"postcode\": \"cb23ar\", \"pricerange\": \"moderate\"}\n- {\"address\": \"Crowne Plaza Hotel 20 Downing Street\", \"area\": \"centre\", \"food\": \"international\", \"name\": \"bloomsbury restaurant\", \"phone\": \"08719429180\", \"postcode\": \"cb23dt\", \"pricerange\": \"moderate\", \"signature\": \"coconut and red chilli monkfish\"}\n- {\"address\": \"106 Regent Street City Centre\", \"area\": \"centre\", \"food\": \"international\", \"name\": \"little restaurant cherry and\", \"phone\": \"7773986374\", \"postcode\": \"cb21sj\", \"pricerange\": \"moderate\"}\n- {\"address\": \"35 Saint Andrews Street City Centre\", \"area\": \"centre\", \"food\": \"international\", \"name\": \"the two\", \"phone\": \"2698592220\", \"postcode\": \"cb21ab\", \"pricerange\": \"moderate\"}\n- {\"address\": \"12 Bridge Street City Centre\", \"area\": \"centre\", \"food\": \"international\", \"name\": \"yu cookhouse\", \"phone\": \"8876261241\", \"postcode\": \"cb21db\", \"pricerange\": \"moderate\"}\n- {\"address\": \"12 Norfolk Street City Centre\", \"area\": \"centre\", \"food\": \"international\", \"name\": \"jinling house\", \"phone\": \"7697787170\", \"postcode\": \"cb23dt\", \"pricerange\": \"moderate\"}\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Here are the remaining international restaurant options in Cambridge:\n\n1. Bloomsbury Restaurant - Crowne Plaza Hotel, 20 Downing Street, City Centre. They offer international food and have a signature dish of coconut and red chilli monkfish. Also, moderate price range.\n2. Little Restaurant Cherry and - 106 Regent Street, City Centre. They serve international cuisine and have a moderate price range.\n3. The Two - 35 Saint Andrews Street, City Centre. They offer international food and have a moderate price range.\n4. Yu Cookhouse - 12 Bridge Street, City Centre. They serve international cuisine and have a moderate price range.\n5. Jinling House - 12 Norfolk Street, City Centre. They offer international food and have a moderate price range.\n\nWould you like to reserve a table at one of these restaurants? I can give you a random reservation number. Let me know! Your reservation number would be: R-1234."
+        },
+        {
+            "role": "user",
+            "content": "I'd like to see more options. Can you give me a few more international restaurants in Cambridge?"
+        },
+        {
+            "role": "system",
+            "content": "Your answer should strictly rely to the following Knowledge Base.\n\nKnowledge Base:\n- {\"address\": \"35 Saint Andrews Street City Centre\", \"area\": \"centre\", \"food\": \"international\", \"name\": \"the varsity restaurant\", \"phone\": \"01223356060\", \"postcode\": \"cb23ar\", \"pricerange\": \"moderate\"}\n- {\"address\": \"Crowne Plaza Hotel 20 Downing Street\", \"area\": \"centre\", \"food\": \"international\", \"name\": \"bloomsbury restaurant\", \"phone\": \"08719429180\", \"postcode\": \"cb23dt\", \"pricerange\": \"moderate\", \"signature\": \"coconut and red chilli monkfish\"}\n- {\"address\": \"106 Regent Street City Centre\", \"area\": \"centre\", \"food\": \"international\", \"name\": \"little restaurant cherry and\", \"phone\": \"7773986374\", \"postcode\": \"cb21sj\", \"pricerange\": \"moderate\"}\n- {\"address\": \"35 Saint Andrews Street City Centre\", \"area\": \"centre\", \"food\": \"international\", \"name\": \"the two\", \"phone\": \"2698592220\", \"postcode\": \"cb21ab\", \"pricerange\": \"moderate\"}\n- {\"address\": \"12 Bridge Street City Centre\", \"area\": \"centre\", \"food\": \"international\", \"name\": \"yu cookhouse\", \"phone\": \"8876261241\", \"postcode\": \"cb21db\", \"pricerange\": \"moderate\"}\n- {\"address\": \"12 Norfolk Street City Centre\", \"area\": \"centre\", \"food\": \"international\", \"name\": \"jinling house\", \"phone\": \"7697787170\", \"postcode\": \"cb23dt\", \"pricerange\": \"moderate\"}\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Here are the remaining international restaurant options in Cambridge:\n\n1. Bloomsbury Restaurant - Crowne Plaza Hotel, 20 Downing Street, City Centre. They offer international food and have a signature dish of coconut and red chilli monkfish. Also, moderate price range.\n2. Little Restaurant Cherry and - 106 Regent Street, City Centre. They serve international cuisine and have a moderate price range.\n3. The Two - 35 Saint Andrews Street, City Centre. They offer international food and have a moderate price range.\n4. Yu Cookhouse - 12 Bridge Street, City Centre. They serve international cuisine and have a moderate price range.\n5. Jinling House - 12 Norfolk Street, City Centre. They offer international food and have a moderate price range.\n\nThese are all the international restaurants in the Knowledge Base. If you'd like to reserve a table at one of these restaurants, I can give you a random reservation number. Let me know! Your reservation number would be: R-1234."
+        },
+        {
+            "role": "user",
+            "content": "I'm still looking for more options. Can you give me their phone numbers and addresses, so I can research further?"
+        },
+        {
+            "role": "system",
+            "content": "Your answer should strictly rely to the following Knowledge Base.\n\nKnowledge Base:\n- {\"address\": \"35 Saint Andrews Street City Centre\", \"area\": \"centre\", \"food\": \"international\", \"name\": \"the varsity restaurant\", \"phone\": \"01223356060\", \"postcode\": \"cb23ar\", \"pricerange\": \"moderate\"}\n- {\"address\": \"Crowne Plaza Hotel 20 Downing Street\", \"area\": \"centre\", \"food\": \"international\", \"name\": \"bloomsbury restaurant\", \"phone\": \"08719429180\", \"postcode\": \"cb23dt\", \"pricerange\": \"moderate\", \"signature\": \"coconut and red chilli monkfish\"}\n- {\"address\": \"106 Regent Street City Centre\", \"area\": \"centre\", \"food\": \"international\", \"name\": \"little restaurant cherry and\", \"phone\": \"7773986374\", \"postcode\": \"cb21sj\", \"pricerange\": \"moderate\"}\n- {\"address\": \"35 Saint Andrews Street City Centre\", \"area\": \"centre\", \"food\": \"international\", \"name\": \"the two\", \"phone\": \"2698592220\", \"postcode\": \"cb21ab\", \"pricerange\": \"moderate\"}\n- {\"address\": \"12 Bridge Street City Centre\", \"area\": \"centre\", \"food\": \"international\", \"name\": \"yu cookhouse\", \"phone\": \"8876261241\", \"postcode\": \"cb21db\", \"pricerange\": \"moderate\"}\n- {\"address\": \"12 Norfolk Street City Centre\", \"area\": \"centre\", \"food\": \"international\", \"name\": \"jinling house\", \"phone\": \"7697787170\", \"postcode\": \"cb23dt\", \"pricerange\": \"moderate\"}\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Here are the phone numbers and addresses of the international restaurants in Cambridge:\n\n1. The Varsity Restaurant\n\t* Address: 35 Saint Andrews Street, City Centre\n\t* Phone: 01223356060\n\t* Postcode: CB2 3AR\n\t* Pricerange: Moderate\n2. Bloomsbury Restaurant\n\t* Address: Crowne Plaza Hotel, 20 Downing Street, City Centre\n\t* Phone: 08719429180\n\t* Postcode: CB2 3DT\n\t* Pricerange: Moderate\n\t* Signature: Coconut and red chilli monkfish\n3. Little Restaurant Cherry and\n\t* Address: 106 Regent Street, City Centre\n\t* Phone: 7773986374\n\t* Postcode: CB2 1SJ\n\t* Pricerange: Moderate\n4. The Two\n\t* Address: 35 Saint Andrews Street, City Centre\n\t* Phone: 2698592220\n\t* Postcode: CB2 1AB\n\t* Pricerange: Moderate\n5. Yu Cookhouse\n\t* Address: 12 Bridge Street, City Centre\n\t* Phone: 8876261241\n\t* Postcode: CB2 1DB\n\t* Pricerange: Moderate\n6. Jinling House\n\t* Address: 12 Norfolk Street, City Centre\n\t* Phone: 7697787170\n\t* Postcode: CB2 3DT\n\t* Pricerange: Moderate"
+        }
+    ]
+]

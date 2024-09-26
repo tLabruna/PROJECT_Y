@@ -1,0 +1,42 @@
+[
+    {
+        "turn": 0,
+        "role": "user",
+        "text": "I'm looking for a restaurant in Cambridge. I want it to be in the cheap price range."
+    },
+    {
+        "turn": 1,
+        "role": "system",
+        "text": "We've got a lot of options in Cambridge. Can you give me a bit more to go on? What type of cuisine are you in the mood for? Or perhaps a specific location in mind? That would help me narrow down the list for you."
+    },
+    {
+        "turn": 2,
+        "role": "user",
+        "text": "I'm in the mood for Italian food."
+    },
+    {
+        "turn": 3,
+        "role": "system",
+        "text": "Italian food in Cambridge, got it! To give you the best options, can you please tell me if you're looking for a specific type of Italian cuisine, like pizza or pasta? And are you open to a casual dining experience or something a bit fancier?"
+    },
+    {
+        "turn": 4,
+        "role": "user",
+        "text": "I'm looking for a casual dining experience and pasta would be great."
+    },
+    {
+        "turn": 5,
+        "role": "system",
+        "text": "Casual Italian pasta spot in Cambridge, got it! To give you a more precise match, can you please tell me if you're looking for a place with outdoor seating, if you have any dietary restrictions (e.g. gluten-free), or if you'd prefer a restaurant in a specific area of the city?"
+    },
+    {
+        "turn": 6,
+        "role": "user",
+        "text": "I'd like a place in the north part of the city, that's all."
+    },
+    {
+        "turn": 7,
+        "role": "system",
+        "text": "Based on your request, I'd like to recommend \"da vinci pizzeria\" located at 20 Milton Road Chesterton, CB4 1JY. It's a casual Italian spot with a wide variety of pasta dishes. Would you like to reserve a table? Your reservation number would be 1234."
+    }
+]

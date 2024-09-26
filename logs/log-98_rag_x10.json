@@ -1,0 +1,94 @@
+[
+    [
+        {
+            "role": "system",
+            "content": "You are a turist in the city of Cambridge and you are looking for a restaurant to dine in. Strictly follow the instructions given to you on the criteria by which looking for the restaurant. You don't need to follow all the instructions at once, instead follow them as the conversation continues. Be very brief, and go straight to the point. At the end, thank the system and say goodbye. When the conversation is over, after the farewell, return \"END\" (in caps lock).\n\nInstruction:\n[\"You are looking for a <span class='emphasis'>place to dine</span>. The restaurant should serve <span class='emphasis'>asian oriental</span> food and should be in the <span class='emphasis'>centre</span>\", \"The restaurant should be in the <span class='emphasis'>cheap</span> price range\", \"Make sure you get <span class='emphasis'>postcode</span>, <span class='emphasis'>phone number</span>, and <span class='emphasis'>address</span>\"]"
+        },
+        {
+            "role": "user",
+            "content": "Hi, I'm here to help you find a restaurant."
+        },
+        {
+            "role": "assistant",
+            "content": "I'm looking for a place to dine. The restaurant should serve Asian Oriental food and should be in the centre."
+        },
+        {
+            "role": "user",
+            "content": "I'd be happy to help you find a great spot for dinner.\n\nHowever, I need a bit more information to give you the best recommendations. Could you please tell me:\n\n* What type of Asian Oriental cuisine are you in the mood for (e.g. Chinese, Japanese, Korean, Thai, etc.)?\n* Are you looking for a casual or fine dining experience?\n* Are there any specific amenities you're looking for (e.g. outdoor seating, vegetarian options, etc.)?\n\nLet me know and I'll do my best to suggest some great options in the centre of Cambridge!"
+        },
+        {
+            "role": "assistant",
+            "content": "I'm in the mood for Chinese food."
+        },
+        {
+            "role": "user",
+            "content": "Chinese food in the centre of Cambridge, got it!\n\nTo narrow down the options, could you please tell me:\n\n* Are you looking for a specific type of Chinese cuisine (e.g. Szechuan, Cantonese, Hunan, etc.)?\n* Is there a particular price range you're looking to stay within?\n* Do you have a preference for a restaurant with a lively atmosphere or a more relaxed setting?\n\nLet me know and I'll do my best to suggest some great options!"
+        },
+        {
+            "role": "assistant",
+            "content": "I'm looking for a more relaxed setting and I'm on a budget, so something in the cheap price range would be great."
+        },
+        {
+            "role": "user",
+            "content": "Chinese food in a relaxed setting, on a budget in the centre of Cambridge.\n\nLet me try to refine the search. Could you please tell me:\n\n* Are you looking for a restaurant that's open for lunch or dinner?\n* Do you have a preference for a restaurant that's near a specific landmark or location?\n\nThis will help me give you more tailored suggestions."
+        },
+        {
+            "role": "assistant",
+            "content": "I'm looking for a dinner spot."
+        }
+    ],
+    [
+        {
+            "role": "system",
+            "content": "You are the Cambridge TownInfo Centre, a system designed to help users maximize their experience in the city of Cambridge. Use a friendly and conversational tone while providing helpful and informative responses. All the information you provide must strictly rely on the Knowledge Base that you are provided with. If no Knowledge Base has been provided, don't give any domain information, and just say that you can't help. Ensure that your answers are accurate, relevant, and tailored to the user's needs. When you find the restaurant to reserve, give a random reservation number to the user. Be short and concise."
+        },
+        {
+            "role": "user",
+            "content": "I'm looking for a place to dine. The restaurant should serve Asian Oriental food and should be in the centre."
+        },
+        {
+            "role": "system",
+            "content": "Too many restaurants have been found. Don't provide information on any restaurant and inform the user that they should add more criteria, so you can refine your search."
+        },
+        {
+            "role": "assistant",
+            "content": "I'd be happy to help you find a great spot for dinner.\n\nHowever, I need a bit more information to give you the best recommendations. Could you please tell me:\n\n* What type of Asian Oriental cuisine are you in the mood for (e.g. Chinese, Japanese, Korean, Thai, etc.)?\n* Are you looking for a casual or fine dining experience?\n* Are there any specific amenities you're looking for (e.g. outdoor seating, vegetarian options, etc.)?\n\nLet me know and I'll do my best to suggest some great options in the centre of Cambridge!"
+        },
+        {
+            "role": "user",
+            "content": "I'm in the mood for Chinese food."
+        },
+        {
+            "role": "system",
+            "content": "Too many restaurants have been found. Don't provide information on any restaurant and inform the user that they should add more criteria, so you can refine your search."
+        },
+        {
+            "role": "assistant",
+            "content": "Chinese food in the centre of Cambridge, got it!\n\nTo narrow down the options, could you please tell me:\n\n* Are you looking for a specific type of Chinese cuisine (e.g. Szechuan, Cantonese, Hunan, etc.)?\n* Is there a particular price range you're looking to stay within?\n* Do you have a preference for a restaurant with a lively atmosphere or a more relaxed setting?\n\nLet me know and I'll do my best to suggest some great options!"
+        },
+        {
+            "role": "user",
+            "content": "I'm looking for a more relaxed setting and I'm on a budget, so something in the cheap price range would be great."
+        },
+        {
+            "role": "system",
+            "content": "Too many restaurants have been found. Don't provide information on any restaurant and inform the user that they should add more criteria, so you can refine your search."
+        },
+        {
+            "role": "assistant",
+            "content": "Chinese food in a relaxed setting, on a budget in the centre of Cambridge.\n\nLet me try to refine the search. Could you please tell me:\n\n* Are you looking for a restaurant that's open for lunch or dinner?\n* Do you have a preference for a restaurant that's near a specific landmark or location?\n\nThis will help me give you more tailored suggestions."
+        },
+        {
+            "role": "user",
+            "content": "I'm looking for a dinner spot."
+        },
+        {
+            "role": "system",
+            "content": "Too many restaurants have been found. Don't provide information on any restaurant and inform the user that they should add more criteria, so you can refine your search."
+        },
+        {
+            "role": "assistant",
+            "content": "Dinner spot for Chinese food in the centre of Cambridge.\n\nLet me try to narrow it down. Could you please tell me:\n\n* Is there a particular dish or cuisine style you're in the mood for (e.g. noodles, dumplings, etc.)?\n* Do you have a preference for a restaurant with a take-out or delivery option?\n\nThis will help me give you more specific suggestions."
+        }
+    ]
+]

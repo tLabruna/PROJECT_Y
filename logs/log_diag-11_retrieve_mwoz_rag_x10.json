@@ -1,0 +1,42 @@
+[
+    {
+        "turn": 0,
+        "role": "user",
+        "text": "I'm looking for a restaurant in the centre of Cambridge."
+    },
+    {
+        "turn": 1,
+        "role": "system",
+        "text": "We've got a lot of options in the city centre. To narrow it down, can you tell me what type of cuisine you're in the mood for? Italian, Indian, or something else?"
+    },
+    {
+        "turn": 2,
+        "role": "user",
+        "text": "No, I'm not looking for a specific cuisine, I just want it to be expensive."
+    },
+    {
+        "turn": 3,
+        "role": "system",
+        "text": "Expensive options, got it. To help narrow it down, can you give me a price range in mind (e.g. over \u00a320, \u00a350+, etc.)?"
+    },
+    {
+        "turn": 4,
+        "role": "user",
+        "text": "I'm looking for something over \u00a350 per person."
+    },
+    {
+        "turn": 5,
+        "role": "system",
+        "text": "With a budget of over \u00a350 per person, I've got a few options. Let me suggest some high-end restaurants in the city centre. How about Midsummer House? It's a Michelin-starred restaurant with a focus on seasonal British cuisine. Would you like to reserve a table?"
+    },
+    {
+        "turn": 6,
+        "role": "user",
+        "text": "Yes, that sounds great. Now I need to book a table for 7 people at 16:15 on Tuesday."
+    },
+    {
+        "turn": 7,
+        "role": "system",
+        "text": "It seems we've hit a snag. I've checked availability at Midsummer House, but unfortunately, they don't have a table available for 7 people at 16:15 on a Tuesday. Would you like me to suggest alternative dates or times?"
+    }
+]

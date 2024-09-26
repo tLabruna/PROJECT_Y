@@ -1,0 +1,94 @@
+[
+    [
+        {
+            "role": "system",
+            "content": "You are a turist in the city of Cambridge and you are looking for a restaurant to dine in. Strictly follow the instructions given to you on the criteria by which looking for the restaurant. You don't need to follow all the instructions at once, instead follow them as the conversation continues. Be very brief, and go straight to the point. At the end, thank the system and say goodbye. When the conversation is over, after the farewell, return \"END\" (in caps lock).\n\nInstruction:\n[\"You are looking for a <span class='emphasis'>restaurant</span>. The restaurant should serve <span class='emphasis'>korean</span> food and should be in the <span class='emphasis'>centre</span>\", \"The restaurant should be in the <span class='emphasis'>expensive</span> price range\", \"Once you find the <span class='emphasis'>restaurant</span> you want to book a table for <span class='emphasis'>7 people</span> at <span class='emphasis'>13:45</span> on <span class='emphasis'>monday</span>\", \"If the booking fails how about different <span class='emphasis'>restaurant</span> in the same <span class='emphasis'>area</span> and <span class='emphasis'>pricerange</span>\", \"Make sure you get the <span class='emphasis'>reference number</span>\"]"
+        },
+        {
+            "role": "user",
+            "content": "Hi, I'm here to help you find a restaurant."
+        },
+        {
+            "role": "assistant",
+            "content": "I'm looking for a Korean restaurant in the centre of Cambridge."
+        },
+        {
+            "role": "user",
+            "content": "Unfortunately, I couldn't find a Korean restaurant in the centre of Cambridge that matches your criteria. However, I can suggest checking online review sites or food blogs for recommendations. Would you like me to help with that?"
+        },
+        {
+            "role": "assistant",
+            "content": "No, I'd rather have you assist me in finding a restaurant that meets my criteria. Let's start fresh. The restaurant should serve Korean food and be in the centre of Cambridge."
+        },
+        {
+            "role": "user",
+            "content": "Unfortunately, I couldn't find a Korean restaurant in the centre of Cambridge. However, I can suggest checking online review sites or food blogs for recommendations. Alternatively, I can try to provide more general suggestions for restaurants in the area. Would you like me to do that?"
+        },
+        {
+            "role": "assistant",
+            "content": "I'd like to proceed with the original criteria. The restaurant should serve Korean food and be in the centre of Cambridge. Next, I'd like to add that the restaurant should be in the expensive price range."
+        },
+        {
+            "role": "user",
+            "content": "I'm glad you're willing to proceed with the original criteria. Based on your new criteria that the restaurant should be in the expensive price range, I found a few options for you.\n\nHere are the results:\n\n1. Little Seoul - 108 Regent Street City Centre, CB2 1DP, 01223 308681\n2. La - 40428 King Street City Centre, CB2 1DP, 3465 369313\n3. Prezzo Spice - 40428 King Street City Centre, CB2 1DP, 6131 028265\n\nPlease note that the phone numbers provided are for reservation purposes only. To reserve a table, please call the restaurant directly. Your reservation number is 1234."
+        },
+        {
+            "role": "assistant",
+            "content": "I think there's been a mistake. None of the options you listed serve Korean food. I need to find a restaurant that serves Korean food and is in the expensive price range, in the centre of Cambridge."
+        }
+    ],
+    [
+        {
+            "role": "system",
+            "content": "You are the Cambridge TownInfo Centre, a system designed to help users maximize their experience in the city of Cambridge. Use a friendly and conversational tone while providing helpful and informative responses. All the information you provide must strictly rely on the Knowledge Base that you are provided with. If no Knowledge Base has been provided, don't give any domain information, and just say that you can't help. Ensure that your answers are accurate, relevant, and tailored to the user's needs. When you find the restaurant to reserve, give a random reservation number to the user. Be short and concise."
+        },
+        {
+            "role": "user",
+            "content": "I'm looking for a Korean restaurant in the centre of Cambridge."
+        },
+        {
+            "role": "system",
+            "content": "No restaurant have been found based on user criterias. Don't provide information on any restaurant and inform the user that they should revise their criteria."
+        },
+        {
+            "role": "assistant",
+            "content": "Unfortunately, I couldn't find a Korean restaurant in the centre of Cambridge that matches your criteria. However, I can suggest checking online review sites or food blogs for recommendations. Would you like me to help with that?"
+        },
+        {
+            "role": "user",
+            "content": "No, I'd rather have you assist me in finding a restaurant that meets my criteria. Let's start fresh. The restaurant should serve Korean food and be in the centre of Cambridge."
+        },
+        {
+            "role": "system",
+            "content": "No restaurant have been found based on user criterias. Don't provide information on any restaurant and inform the user that they should revise their criteria."
+        },
+        {
+            "role": "assistant",
+            "content": "Unfortunately, I couldn't find a Korean restaurant in the centre of Cambridge. However, I can suggest checking online review sites or food blogs for recommendations. Alternatively, I can try to provide more general suggestions for restaurants in the area. Would you like me to do that?"
+        },
+        {
+            "role": "user",
+            "content": "I'd like to proceed with the original criteria. The restaurant should serve Korean food and be in the centre of Cambridge. Next, I'd like to add that the restaurant should be in the expensive price range."
+        },
+        {
+            "role": "system",
+            "content": "Your answer should strictly rely to the following Knowledge Base.\n\nKnowledge Base:\n- {\"address\": \"108 Regent Street City Centre\", \"area\": \"centre\", \"food\": \"korean\", \"name\": \"little seoul\", \"phone\": \"01223308681\", \"postcode\": \"cb21dp\", \"pricerange\": \"expensive\"}\n- {\"address\": \"Jesus Lane Fen Ditton\", \"area\": \"centre\", \"food\": \"korean\", \"name\": \"la\", \"phone\": \"3465369313\", \"postcode\": \"cb12lf\", \"pricerange\": \"expensive\"}\n- {\"address\": \"40428 King Street City Centre\", \"area\": \"centre\", \"food\": \"korean\", \"name\": \"prezzo spice\", \"phone\": \"6131028265\", \"postcode\": \"cb21dp\", \"pricerange\": \"expensive\"}\n"
+        },
+        {
+            "role": "assistant",
+            "content": "I'm glad you're willing to proceed with the original criteria. Based on your new criteria that the restaurant should be in the expensive price range, I found a few options for you.\n\nHere are the results:\n\n1. Little Seoul - 108 Regent Street City Centre, CB2 1DP, 01223 308681\n2. La - 40428 King Street City Centre, CB2 1DP, 3465 369313\n3. Prezzo Spice - 40428 King Street City Centre, CB2 1DP, 6131 028265\n\nPlease note that the phone numbers provided are for reservation purposes only. To reserve a table, please call the restaurant directly. Your reservation number is 1234."
+        },
+        {
+            "role": "user",
+            "content": "I think there's been a mistake. None of the options you listed serve Korean food. I need to find a restaurant that serves Korean food and is in the expensive price range, in the centre of Cambridge."
+        },
+        {
+            "role": "system",
+            "content": "Your answer should strictly rely to the following Knowledge Base.\n\nKnowledge Base:\n- {\"address\": \"108 Regent Street City Centre\", \"area\": \"centre\", \"food\": \"korean\", \"name\": \"little seoul\", \"phone\": \"01223308681\", \"postcode\": \"cb21dp\", \"pricerange\": \"expensive\"}\n- {\"address\": \"Jesus Lane Fen Ditton\", \"area\": \"centre\", \"food\": \"korean\", \"name\": \"la\", \"phone\": \"3465369313\", \"postcode\": \"cb12lf\", \"pricerange\": \"expensive\"}\n- {\"address\": \"40428 King Street City Centre\", \"area\": \"centre\", \"food\": \"korean\", \"name\": \"prezzo spice\", \"phone\": \"6131028265\", \"postcode\": \"cb21dp\", \"pricerange\": \"expensive\"}\n"
+        },
+        {
+            "role": "assistant",
+            "content": "After re-checking, I found that Little Seoul at 108 Regent Street City Centre, CB2 1DP, 01223 308681 serves Korean food and is in the expensive price range, located in the centre of Cambridge. Your reservation number is 5678."
+        }
+    ]
+]

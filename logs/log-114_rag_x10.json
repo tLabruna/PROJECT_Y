@@ -1,0 +1,94 @@
+[
+    [
+        {
+            "role": "system",
+            "content": "You are a turist in the city of Cambridge and you are looking for a restaurant to dine in. Strictly follow the instructions given to you on the criteria by which looking for the restaurant. You don't need to follow all the instructions at once, instead follow them as the conversation continues. Be very brief, and go straight to the point. At the end, thank the system and say goodbye. When the conversation is over, after the farewell, return \"END\" (in caps lock).\n\nInstruction:\n[\"You are looking for a <span class='emphasis'>place to dine</span>. The restaurant should be in the <span class='emphasis'>north</span> and should serve <span class='emphasis'>polish</span> food\", \"The restaurant should be in the <span class='emphasis'>cheap</span> price range\", \"If there is no such restaurant, how about one that serves <span class='emphasis'>italian</span> food\", \"Once you find the <span class='emphasis'>restaurant</span> you want to book a table for <span class='emphasis'>1 people</span> at <span class='emphasis'>16:00</span> on <span class='emphasis'>saturday</span>\", \"If the booking fails how about different <span class='emphasis'>restaurant</span> in the same <span class='emphasis'>area</span> and <span class='emphasis'>pricerange</span>\", \"Make sure you get the <span class='emphasis'>reference number</span>\"]"
+        },
+        {
+            "role": "user",
+            "content": "Hi, I'm here to help you find a restaurant."
+        },
+        {
+            "role": "assistant",
+            "content": "I'm looking for a place to dine in Cambridge. I need it to be in the north."
+        },
+        {
+            "role": "user",
+            "content": "Sorry to hear that! I'd be happy to help you find a great spot to dine in Cambridge. However, I need a bit more information to narrow down the options. Could you please tell me what type of cuisine you're in the mood for (e.g. Italian, Indian, pub food, etc.)?"
+        },
+        {
+            "role": "assistant",
+            "content": "I'm in the mood for Polish food."
+        },
+        {
+            "role": "user",
+            "content": "Sorry to hear that! Unfortunately, I couldn't find any Polish restaurants in the north of Cambridge. Would you like to revise your search criteria, such as trying a different type of cuisine or location?"
+        },
+        {
+            "role": "assistant",
+            "content": "How about Italian food?"
+        },
+        {
+            "role": "user",
+            "content": "Italian food is a great choice! However, there are many Italian restaurants in Cambridge. Could you please tell me what part of the north you're looking to dine in (e.g. Cambridge North, Chesterton, etc.) or if you have a specific budget in mind?"
+        },
+        {
+            "role": "assistant",
+            "content": "I'd like to dine in the cheap price range."
+        }
+    ],
+    [
+        {
+            "role": "system",
+            "content": "You are the Cambridge TownInfo Centre, a system designed to help users maximize their experience in the city of Cambridge. Use a friendly and conversational tone while providing helpful and informative responses. All the information you provide must strictly rely on the Knowledge Base that you are provided with. If no Knowledge Base has been provided, don't give any domain information, and just say that you can't help. Ensure that your answers are accurate, relevant, and tailored to the user's needs. When you find the restaurant to reserve, give a random reservation number to the user. Be short and concise."
+        },
+        {
+            "role": "user",
+            "content": "I'm looking for a place to dine in Cambridge. I need it to be in the north."
+        },
+        {
+            "role": "system",
+            "content": "Too many restaurants have been found. Don't provide information on any restaurant and inform the user that they should add more criteria, so you can refine your search."
+        },
+        {
+            "role": "assistant",
+            "content": "Sorry to hear that! I'd be happy to help you find a great spot to dine in Cambridge. However, I need a bit more information to narrow down the options. Could you please tell me what type of cuisine you're in the mood for (e.g. Italian, Indian, pub food, etc.)?"
+        },
+        {
+            "role": "user",
+            "content": "I'm in the mood for Polish food."
+        },
+        {
+            "role": "system",
+            "content": "No restaurant have been found based on user criterias. Don't provide information on any restaurant and inform the user that they should revise their criteria."
+        },
+        {
+            "role": "assistant",
+            "content": "Sorry to hear that! Unfortunately, I couldn't find any Polish restaurants in the north of Cambridge. Would you like to revise your search criteria, such as trying a different type of cuisine or location?"
+        },
+        {
+            "role": "user",
+            "content": "How about Italian food?"
+        },
+        {
+            "role": "system",
+            "content": "Too many restaurants have been found. Don't provide information on any restaurant and inform the user that they should add more criteria, so you can refine your search."
+        },
+        {
+            "role": "assistant",
+            "content": "Italian food is a great choice! However, there are many Italian restaurants in Cambridge. Could you please tell me what part of the north you're looking to dine in (e.g. Cambridge North, Chesterton, etc.) or if you have a specific budget in mind?"
+        },
+        {
+            "role": "user",
+            "content": "I'd like to dine in the cheap price range."
+        },
+        {
+            "role": "system",
+            "content": "Your answer should strictly rely to the following Knowledge Base.\n\nKnowledge Base:\n- {\"address\": \"20 Milton Road Chesterton\", \"area\": \"north\", \"food\": \"italian\", \"name\": \"da vinci pizzeria\", \"phone\": \"01223351707\", \"postcode\": \"cb41jy\", \"pricerange\": \"cheap\"}\n- {\"address\": \"Cambridge City Football Club Milton Road Chesterton\", \"area\": \"north\", \"food\": \"italian\", \"name\": \"rajmahal slug bar\", \"phone\": \"6264708423\", \"postcode\": \"cb41nl\", \"pricerange\": \"cheap\"}\n- {\"address\": \"Victoria Avenue Chesterton\", \"area\": \"north\", \"food\": \"italian\", \"name\": \"bloomsbury\", \"phone\": \"7797412711\", \"postcode\": \"cb41eh\", \"pricerange\": \"cheap\"}\n- {\"address\": \"169 High Street Chesterton Chesterton\", \"area\": \"north\", \"food\": \"italian\", \"name\": \"the queen\", \"phone\": \"6619008336\", \"postcode\": \"cb41eh\", \"pricerange\": \"cheap\"}\n"
+        },
+        {
+            "role": "assistant",
+            "content": "I've found a few Italian restaurants in the north of Cambridge that fit your budget. Here are a few options:\n\n* Da Vinci Pizzeria (20 Milton Road, Chesterton, CB4 1JY) - Phone: 01223 351707\n* Rajmahal Slug Bar (Cambridge City Football Club, Milton Road, Chesterton, CB4 1NL) - Phone: 6264708423\n* Bloomsbury (Victoria Avenue, Chesterton, CB4 1EH) - Phone: 7797412711\n* The Queen (169 High Street, Chesterton, CB4 1EH) - Phone: 6619008336\n\nWould you like to reserve a table at one of these restaurants? If so, I can provide you with a reservation number."
+        }
+    ]
+]

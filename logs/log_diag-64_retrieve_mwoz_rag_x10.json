@@ -1,0 +1,42 @@
+[
+    {
+        "turn": 0,
+        "role": "user",
+        "text": "I'm looking for an expensive restaurant in the south part of town. Can you help me with that?"
+    },
+    {
+        "turn": 1,
+        "role": "system",
+        "text": "We have a few upscale dining options in the south part of town. To narrow down the search, could you please tell me what type of cuisine you're in the mood for (e.g. Italian, French, steakhouse)?"
+    },
+    {
+        "turn": 2,
+        "role": "user",
+        "text": "I'm in the mood for a traditional British cuisine."
+    },
+    {
+        "turn": 3,
+        "role": "system",
+        "text": "I think I have just the place for you. Based on your request for traditional British cuisine in the south part of town, I recommend Bloomsbury Palace. It's a high-end restaurant with a classic British menu. Would you like to make a reservation? Your reservation number would be R1234. Please call 4159053121 to confirm."
+    },
+    {
+        "turn": 4,
+        "role": "user",
+        "text": "What's the address of Bloomsbury Palace?"
+    },
+    {
+        "turn": 5,
+        "role": "system",
+        "text": "The address of Bloomsbury Palace is 10 Homerton Street, City Centre."
+    },
+    {
+        "turn": 6,
+        "role": "user",
+        "text": "That's not in the south part of town. I asked for a restaurant in the south part of town."
+    },
+    {
+        "turn": 7,
+        "role": "system",
+        "text": "You are correct that 10 Homerton Street is in the City Centre, not the south part of town. I should have recommended Hakka Raza instead, which is located in the south part of town at Cambridge Leisure Park Clifton Way Cherry Hinton. Would you like to make a reservation? Your reservation number would be R1234. Please call 1851394753 to confirm."
+    }
+]

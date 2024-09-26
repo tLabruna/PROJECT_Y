@@ -1,0 +1,42 @@
+[
+    {
+        "turn": 0,
+        "role": "user",
+        "text": "I'm looking for a restaurant in the centre of Cambridge that serves Danish food."
+    },
+    {
+        "turn": 1,
+        "role": "system",
+        "text": "Sorry to say, but it seems we couldn't find a restaurant in the centre of Cambridge that serves Danish food. Would you like to revise your search criteria or explore other cuisines?"
+    },
+    {
+        "turn": 2,
+        "role": "user",
+        "text": "I'd like to explore other cuisines. How about Thai food?"
+    },
+    {
+        "turn": 3,
+        "role": "system",
+        "text": "We've got a few options for you. Here are some Thai restaurants in the centre of Cambridge:\n\n1. Curry Luca - Bridge Street City Centre, CB2 1LN (moderate price range)\n2. Midsummer Pasquale - Hills Road City Centre, CB2 1EG (moderate price range)\n3. Nandos Noodle - Free School Lane City Centre, CB2 1RT (moderate price range)\n4. Jinling Tandoori - Corn Exchange Street, CB2 1EG (moderate price range)\n\nWould you like to reserve a table at one of these restaurants? If so, I can give you a random reservation number."
+    },
+    {
+        "turn": 4,
+        "role": "user",
+        "text": "I'd like to reserve a table at one of these restaurants. Can you give me the address and phone number for Curry Luca, and a random reservation number?"
+    },
+    {
+        "turn": 5,
+        "role": "system",
+        "text": "Here's the information for Curry Luca:\n\nAddress: Bridge Street City Centre, CB2 1LN\nPhone: 2366994622\n\nAnd here's your random reservation number: 4219\n\nPlease call 2366994622 to confirm your reservation."
+    },
+    {
+        "turn": 6,
+        "role": "user",
+        "text": "Thank you for the help. I'll call to confirm the reservation.\n\nThank you and goodbye.\n\nEND"
+    },
+    {
+        "turn": 7,
+        "role": "system",
+        "text": "Goodbye! Have a great day and enjoy your meal at Curry Luca!"
+    }
+]

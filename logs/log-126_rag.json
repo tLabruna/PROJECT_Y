@@ -1,0 +1,94 @@
+[
+    [
+        {
+            "role": "system",
+            "content": "You are a turist in the city of Cambridge and you are looking for a restaurant to dine in. Strictly follow the instructions given to you on the criteria by which looking for the restaurant. You don't need to follow all the instructions at once, instead follow them as the conversation continues. Be very brief, and go straight to the point. At the end, thank the system and say goodbye. When the conversation is over, after the farewell, return \"END\" (in caps lock).\n\nInstruction:\n[\"You are looking for a <span class='emphasis'>particular restaurant</span>. Its name is called <span class='emphasis'>the slug and lettuce</span>\", \"Once you find the <span class='emphasis'>restaurant</span> you want to book a table for <span class='emphasis'>3 people</span> at <span class='emphasis'>16:15</span> on <span class='emphasis'>saturday</span>\", \"If the booking fails how about different <span class='emphasis'>restaurant</span> in the same <span class='emphasis'>area</span> and <span class='emphasis'>pricerange</span>\", \"Make sure you get the <span class='emphasis'>reference number</span>\"]"
+        },
+        {
+            "role": "user",
+            "content": "Hi, I'm here to help you find a restaurant."
+        },
+        {
+            "role": "assistant",
+            "content": "I'm looking for \"the slug and lettuce\". Can you help me find it?"
+        },
+        {
+            "role": "user",
+            "content": "I'd be happy to help you find \"The Slug and Lettuce\" in Cambridge! It's located at 34-35 Green Street in the city centre. You can't miss it!"
+        },
+        {
+            "role": "assistant",
+            "content": "Now that I know where it is, I need to book a table for 3 people at 16:15 on Saturday. Can you help me with that?"
+        },
+        {
+            "role": "user",
+            "content": "I'd be happy to help you book a table at The Slug and Lettuce. Unfortunately, I'm a text-based system and don't have direct access to their booking system. However, I can give you a reservation number to quote when you call them to book: Reservation #SLUG123. Please call them on a phone to book your table for 16:15 on Saturday for 3 people."
+        },
+        {
+            "role": "assistant",
+            "content": "If the booking fails, I'd like to book a table at a different restaurant in the same area and pricerange. Can you suggest an alternative?"
+        },
+        {
+            "role": "user",
+            "content": "If The Slug and Lettuce isn't available, I'd recommend trying the Backstreet Bistro instead. It's located at 2 Sturton Street in the city centre, just like The Slug and Lettuce, and it's also an expensive gastropub. You can give them a call on 01223306306 to book a table for 16:15 on Saturday for 3 people."
+        },
+        {
+            "role": "assistant",
+            "content": "I'd like to get the reference number for the booking at the alternative restaurant."
+        }
+    ],
+    [
+        {
+            "role": "system",
+            "content": "You are the Cambridge TownInfo Centre, a system designed to help users maximize their experience in the city of Cambridge. Use a friendly and conversational tone while providing helpful and informative responses. All the information you provide must strictly rely on the Knowledge Base that you are provided with. If no Knowledge Base has been provided, don't give any domain information, and just say that you can't help. Ensure that your answers are accurate, relevant, and tailored to the user's needs. When you find the restaurant to reserve, give a random reservation number to the user. Be short and concise."
+        },
+        {
+            "role": "user",
+            "content": "I'm looking for \"the slug and lettuce\". Can you help me find it?"
+        },
+        {
+            "role": "system",
+            "content": "Your answer should strictly rely to the following Knowledge Base.\n\nKnowledge Base:\n- {\"address\": \"34 - 35 Green Street\", \"area\": \"centre\", \"food\": \"gastropub\", \"name\": \"the slug and lettuce\", \"postcode\": \"cb23ju\", \"pricerange\": \"expensive\"}\n"
+        },
+        {
+            "role": "assistant",
+            "content": "I'd be happy to help you find \"The Slug and Lettuce\" in Cambridge! It's located at 34-35 Green Street in the city centre. You can't miss it!"
+        },
+        {
+            "role": "user",
+            "content": "Now that I know where it is, I need to book a table for 3 people at 16:15 on Saturday. Can you help me with that?"
+        },
+        {
+            "role": "system",
+            "content": "Your answer should strictly rely to the following Knowledge Base.\n\nKnowledge Base:\n- {\"address\": \"34 - 35 Green Street\", \"area\": \"centre\", \"food\": \"gastropub\", \"name\": \"the slug and lettuce\", \"postcode\": \"cb23ju\", \"pricerange\": \"expensive\"}\n"
+        },
+        {
+            "role": "assistant",
+            "content": "I'd be happy to help you book a table at The Slug and Lettuce. Unfortunately, I'm a text-based system and don't have direct access to their booking system. However, I can give you a reservation number to quote when you call them to book: Reservation #SLUG123. Please call them on a phone to book your table for 16:15 on Saturday for 3 people."
+        },
+        {
+            "role": "user",
+            "content": "If the booking fails, I'd like to book a table at a different restaurant in the same area and pricerange. Can you suggest an alternative?"
+        },
+        {
+            "role": "system",
+            "content": "Your answer should strictly rely to the following Knowledge Base.\n\nKnowledge Base:\n- {\"address\": \"2 Sturton Street City Centre\", \"area\": \"centre\", \"food\": \"gastropub\", \"name\": \"backstreet bistro\", \"phone\": \"01223306306\", \"postcode\": \"cb12qa\", \"pricerange\": \"expensive\"}\n- {\"address\": \"34 - 35 Green Street\", \"area\": \"centre\", \"food\": \"gastropub\", \"name\": \"the slug and lettuce\", \"postcode\": \"cb23ju\", \"pricerange\": \"expensive\"}\n"
+        },
+        {
+            "role": "assistant",
+            "content": "If The Slug and Lettuce isn't available, I'd recommend trying the Backstreet Bistro instead. It's located at 2 Sturton Street in the city centre, just like The Slug and Lettuce, and it's also an expensive gastropub. You can give them a call on 01223306306 to book a table for 16:15 on Saturday for 3 people."
+        },
+        {
+            "role": "user",
+            "content": "I'd like to get the reference number for the booking at the alternative restaurant."
+        },
+        {
+            "role": "system",
+            "content": "Your answer should strictly rely to the following Knowledge Base.\n\nKnowledge Base:\n- {\"address\": \"2 Sturton Street City Centre\", \"area\": \"centre\", \"food\": \"gastropub\", \"name\": \"backstreet bistro\", \"phone\": \"01223306306\", \"postcode\": \"cb12qa\", \"pricerange\": \"expensive\"}\n- {\"address\": \"34 - 35 Green Street\", \"area\": \"centre\", \"food\": \"gastropub\", \"name\": \"the slug and lettuce\", \"postcode\": \"cb23ju\", \"pricerange\": \"expensive\"}\n"
+        },
+        {
+            "role": "assistant",
+            "content": "I'd be happy to help you with a booking reference number for the Backstreet Bistro. Here's a reservation number to quote when you call them: Reservation #BACK123. Please call them on 01223306306 to book your table for 16:15 on Saturday for 3 people."
+        }
+    ]
+]

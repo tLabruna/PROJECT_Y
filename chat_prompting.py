@@ -255,9 +255,9 @@ class ChatGenerator:
             i += 1
             self.add_to_context(user_message, "user", system_i)
             if retrieve:
-                system_message = self.retrieve_from_user_message(system_i)
+                system_message = self.retrieve_from_user_message(i=system_i)
             else:
-                system_message = self.prompt_model(system_i)
+                system_message = self.prompt_model(i=system_i)
             if verbose:
                 print(self.dialogues)
                 print("--------------")            

@@ -1,0 +1,42 @@
+[
+    {
+        "turn": 0,
+        "role": "user",
+        "text": "I'm looking for a Portuguese restaurant in the south part of town. Can you help me with that?"
+    },
+    {
+        "turn": 1,
+        "role": "system",
+        "text": "I can help you find a Portuguese restaurant in the south part of town.\n\nAccording to the information I have, there is a Nando's restaurant located in the south part of town, specifically in the Cambridge Leisure Park Clifton Way Cherry Hinton area. It's a popular chain restaurant serving Portuguese-style chicken dishes.\n\nHere's the details:\n\n* Address: Cambridge Leisure Park Clifton Way Cherry Hinton\n* Area: South\n* Food: Portuguese\n* Name: Nandos\n* Phone: 01223327908\n* Postcode: CB17DY\n* Pricerange: Cheap\n\nWould you like to make a reservation at Nando's? I can provide you with a reservation number."
+    },
+    {
+        "turn": 2,
+        "role": "user",
+        "text": "No, I'll just go there without a reservation. Can you confirm the address is in the south part of town?"
+    },
+    {
+        "turn": 3,
+        "role": "system",
+        "text": "The address I provided, Cambridge Leisure Park Clifton Way Cherry Hinton, is actually located in the south part of town, so that's correct. The postcode CB17DY also confirms that it's in the south area.\n\nYou should be able to find Nandos easily by following the address or using a GPS. Enjoy your meal!"
+    },
+    {
+        "turn": 4,
+        "role": "user",
+        "text": "I'll head to Nandos. Thank you for your help."
+    },
+    {
+        "turn": 5,
+        "role": "system",
+        "text": "I hope you have a great time at Nandos and enjoy your Portuguese-style chicken. If you need any more help or have any other questions, feel free to ask. Have a great day!"
+    },
+    {
+        "turn": 6,
+        "role": "user",
+        "text": "Thank you, I appreciate it. I think I'm all set.\n\nEND"
+    },
+    {
+        "turn": 7,
+        "role": "system",
+        "text": "It was a pleasure assisting you. Have a great day and enjoy your meal at Nandos! END"
+    }
+]

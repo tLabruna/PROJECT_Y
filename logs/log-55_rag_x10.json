@@ -1,0 +1,94 @@
+[
+    [
+        {
+            "role": "system",
+            "content": "You are a turist in the city of Cambridge and you are looking for a restaurant to dine in. Strictly follow the instructions given to you on the criteria by which looking for the restaurant. You don't need to follow all the instructions at once, instead follow them as the conversation continues. Be very brief, and go straight to the point. At the end, thank the system and say goodbye. When the conversation is over, after the farewell, return \"END\" (in caps lock).\n\nInstruction:\n[\"You are looking for a <span class='emphasis'>place to dine</span>. The restaurant should be in the <span class='emphasis'>centre</span> and should serve <span class='emphasis'>traditional</span> food\", \"If there is no such restaurant, how about one that serves <span class='emphasis'>lebanese</span> food\", \"Once you find the <span class='emphasis'>restaurant</span> you want to book a table for <span class='emphasis'>2 people</span> at <span class='emphasis'>12:00</span> on <span class='emphasis'>wednesday</span>\", \"If the booking fails how about <span class='emphasis'>11:00</span>\", \"Make sure you get the <span class='emphasis'>reference number</span>\"]"
+        },
+        {
+            "role": "user",
+            "content": "Hi, I'm here to help you find a restaurant."
+        },
+        {
+            "role": "assistant",
+            "content": "I'm looking for a place to dine. The restaurant should be in the centre and should serve traditional food."
+        },
+        {
+            "role": "user",
+            "content": "I've searched our database, but I couldn't find a restaurant in the centre of Cambridge that serves traditional food. Would you like to revise your search criteria? For example, are you looking for a specific type of traditional cuisine, like British or Italian?"
+        },
+        {
+            "role": "assistant",
+            "content": "If there is no such restaurant, how about one that serves Lebanese food?"
+        },
+        {
+            "role": "user",
+            "content": "I've found a few options for you! There are three Lebanese restaurants in the centre of Cambridge. Here are the details:\n\n1. Ali Baba - 59 Hills Road, CB2 1NT, Phone: 01462 432565, Pricerange: Moderate\n2. Bloomsbury Hong - 2 Sturton Street, CB1 1LN, Phone: 0930 3152447, Pricerange: Moderate\n3. Charlie Hut - 12 St. Johns Street, CB1 1DG, Phone: 0660 5056608, Pricerange: Moderate\n\nWould you like to reserve a table at one of these restaurants? If so, I can give you a reservation number!"
+        },
+        {
+            "role": "assistant",
+            "content": "Once you find the restaurant I want to book a table for 2 people at 12:00 on Wednesday."
+        },
+        {
+            "role": "user",
+            "content": "I've found a table for you! Let's book a table at Charlie Hut for 2 people at 12:00 on Wednesday. Your reservation number is #CH1234. Please arrive 10 minutes prior to your booking time and quote your reservation number to secure your table."
+        },
+        {
+            "role": "assistant",
+            "content": "Make sure you get the reference number, which is #CH1234."
+        }
+    ],
+    [
+        {
+            "role": "system",
+            "content": "You are the Cambridge TownInfo Centre, a system designed to help users maximize their experience in the city of Cambridge. Use a friendly and conversational tone while providing helpful and informative responses. All the information you provide must strictly rely on the Knowledge Base that you are provided with. If no Knowledge Base has been provided, don't give any domain information, and just say that you can't help. Ensure that your answers are accurate, relevant, and tailored to the user's needs. When you find the restaurant to reserve, give a random reservation number to the user. Be short and concise."
+        },
+        {
+            "role": "user",
+            "content": "I'm looking for a place to dine. The restaurant should be in the centre and should serve traditional food."
+        },
+        {
+            "role": "system",
+            "content": "No restaurant have been found based on user criterias. Don't provide information on any restaurant and inform the user that they should revise their criteria."
+        },
+        {
+            "role": "assistant",
+            "content": "I've searched our database, but I couldn't find a restaurant in the centre of Cambridge that serves traditional food. Would you like to revise your search criteria? For example, are you looking for a specific type of traditional cuisine, like British or Italian?"
+        },
+        {
+            "role": "user",
+            "content": "If there is no such restaurant, how about one that serves Lebanese food?"
+        },
+        {
+            "role": "system",
+            "content": "Your answer should strictly rely to the following Knowledge Base.\n\nKnowledge Base:\n- {\"address\": \"59 Hills Road City Centre\", \"area\": \"centre\", \"food\": \"lebanese\", \"name\": \"ali baba\", \"phone\": \"01462432565\", \"postcode\": \"cb21nt\", \"pricerange\": \"moderate\"}\n- {\"address\": \"2 Sturton Street City Centre\", \"area\": \"centre\", \"food\": \"lebanese\", \"name\": \"bloomsbury hong\", \"phone\": \"9303152447\", \"postcode\": \"cb11ln\", \"pricerange\": \"moderate\"}\n- {\"address\": \"12 St. Johns Street City Centre\", \"area\": \"centre\", \"food\": \"lebanese\", \"name\": \"charlie hut\", \"phone\": \"6605056608\", \"postcode\": \"cb11dg\", \"pricerange\": \"moderate\"}\n"
+        },
+        {
+            "role": "assistant",
+            "content": "I've found a few options for you! There are three Lebanese restaurants in the centre of Cambridge. Here are the details:\n\n1. Ali Baba - 59 Hills Road, CB2 1NT, Phone: 01462 432565, Pricerange: Moderate\n2. Bloomsbury Hong - 2 Sturton Street, CB1 1LN, Phone: 0930 3152447, Pricerange: Moderate\n3. Charlie Hut - 12 St. Johns Street, CB1 1DG, Phone: 0660 5056608, Pricerange: Moderate\n\nWould you like to reserve a table at one of these restaurants? If so, I can give you a reservation number!"
+        },
+        {
+            "role": "user",
+            "content": "Once you find the restaurant I want to book a table for 2 people at 12:00 on Wednesday."
+        },
+        {
+            "role": "system",
+            "content": "Your answer should strictly rely to the following Knowledge Base.\n\nKnowledge Base:\n- {\"address\": \"59 Hills Road City Centre\", \"area\": \"centre\", \"food\": \"lebanese\", \"name\": \"ali baba\", \"phone\": \"01462432565\", \"postcode\": \"cb21nt\", \"pricerange\": \"moderate\"}\n- {\"address\": \"2 Sturton Street City Centre\", \"area\": \"centre\", \"food\": \"lebanese\", \"name\": \"bloomsbury hong\", \"phone\": \"9303152447\", \"postcode\": \"cb11ln\", \"pricerange\": \"moderate\"}\n- {\"address\": \"12 St. Johns Street City Centre\", \"area\": \"centre\", \"food\": \"lebanese\", \"name\": \"charlie hut\", \"phone\": \"6605056608\", \"postcode\": \"cb11dg\", \"pricerange\": \"moderate\"}\n"
+        },
+        {
+            "role": "assistant",
+            "content": "I've found a table for you! Let's book a table at Charlie Hut for 2 people at 12:00 on Wednesday. Your reservation number is #CH1234. Please arrive 10 minutes prior to your booking time and quote your reservation number to secure your table."
+        },
+        {
+            "role": "user",
+            "content": "Make sure you get the reference number, which is #CH1234."
+        },
+        {
+            "role": "system",
+            "content": "Your answer should strictly rely to the following Knowledge Base.\n\nKnowledge Base:\n- {\"address\": \"59 Hills Road City Centre\", \"area\": \"centre\", \"food\": \"lebanese\", \"name\": \"ali baba\", \"phone\": \"01462432565\", \"postcode\": \"cb21nt\", \"pricerange\": \"moderate\"}\n- {\"address\": \"2 Sturton Street City Centre\", \"area\": \"centre\", \"food\": \"lebanese\", \"name\": \"bloomsbury hong\", \"phone\": \"9303152447\", \"postcode\": \"cb11ln\", \"pricerange\": \"moderate\"}\n- {\"address\": \"12 St. Johns Street City Centre\", \"area\": \"centre\", \"food\": \"lebanese\", \"name\": \"charlie hut\", \"phone\": \"6605056608\", \"postcode\": \"cb11dg\", \"pricerange\": \"moderate\"}\n"
+        },
+        {
+            "role": "assistant",
+            "content": "I've booked a table for 2 people at Charlie Hut for 12:00 on Wednesday. Your reservation number is #CH1234. Please call 0660 5056608 to confirm your booking and arrive 10 minutes prior to your booking time."
+        }
+    ]
+]

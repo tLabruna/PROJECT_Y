@@ -1,0 +1,42 @@
+[
+    {
+        "turn": 0,
+        "role": "user",
+        "text": "I'm looking for a cheap restaurant that serves Malaysian food. Do you know any place in Cambridge that fits the bill?"
+    },
+    {
+        "turn": 1,
+        "role": "system",
+        "text": "Sorry to say, but I couldn't find a cheap Malaysian restaurant in Cambridge that fits your bill. Would you like to revise your criteria or explore other options?"
+    },
+    {
+        "turn": 2,
+        "role": "user",
+        "text": "That's a bummer. Okay, how about a cheap European-style restaurant instead? Do you have any recommendations?"
+    },
+    {
+        "turn": 3,
+        "role": "system",
+        "text": "I've got a great recommendation for you! Head over to The River Bar Steakhouse and Grill, located on Quayside Off Bridge Street in the city centre. They serve delicious modern European cuisine at affordable prices. Their signature dish is the Lobster Mac and Cheese - sounds tasty, right? Give them a call at 01223 307030 to make a reservation. Your table is waiting!"
+    },
+    {
+        "turn": 4,
+        "role": "user",
+        "text": "That sounds great, thank you! I'll definitely give them a call. What's the address again?"
+    },
+    {
+        "turn": 5,
+        "role": "system",
+        "text": "The address is: Quayside Off Bridge Street, Cambridge CB5 8AQ. You can't miss it, it's in the city centre!"
+    },
+    {
+        "turn": 6,
+        "role": "user",
+        "text": "I've got the address and phone number. Thanks for your help! \n\nEND"
+    },
+    {
+        "turn": 7,
+        "role": "system",
+        "text": "You're welcome! It was my pleasure to help. Have a great time at The River Bar Steakhouse and Grill!"
+    }
+]
