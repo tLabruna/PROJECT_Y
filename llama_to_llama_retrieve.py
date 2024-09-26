@@ -34,8 +34,7 @@ else:
     user_prompts = instructions_to_prompt(user_prompt, USER_INSTRUCTIONS)
 
 for i in range(len(user_prompts)):
-    if i < 7: continue
-    if i == 10: break
+    if i == 1: break
     user_prompt_i = user_prompts[i-1]
     print(f"Dialogue #{i} starting...\n")
     
@@ -44,10 +43,10 @@ for i in range(len(user_prompts)):
     llama_gen.add_system_prompt(system_prompt, 1)
     log = llama_gen.start_llama_to_llama_mode(0,1,7, retrieve=RETRIEVE, verbose=VERBOSE)
 
-    with open(f"log-{i}.json", "w") as f:
+    with open(f"log-{i}_new.json", "w") as f:
         json.dump(llama_gen.dialogues, f, indent=4)
 
-    file_name = f"log_diag-{i}_retrieve_mwoz.json"
+    file_name = f"log_diag-{i}_retrieve_mwoz_new.json"
 
     with open(file_name, "w") as f:
         json.dump(log, f, indent=4)

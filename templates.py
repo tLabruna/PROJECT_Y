@@ -9,6 +9,94 @@ TEMPLATES = {
     "bear_1": "Chat with me as a friend of mine."
     }
 
+LLAMA_INSTRUCTIONS = {
+    "function_calling": """You have access to the following function:
+
+Use the function 'query_restaurant_kb' to 'Retrieve restaurant details based on specified name, food type, area, or price range':
+{
+  name: "query_restaurant_kb",
+  description: "Retrieve restaurant details based on specified name, food type, area, or price range",
+  parameters: {
+    type: "object",
+    properties: {
+      name: {
+        type: "string",
+        description: "The name of the restaurant (if provided)",
+      },
+      food: {
+        type: "string",
+        description: "Type of food (e.g., italian, mexican, chinese, etc.)",
+      },
+      area: {
+        type: "string",
+        description: "Location area (e.g., north, south, east, west, or centre)",
+      },
+      pricerange: {
+        type: "string",
+        description: "Price range of the restaurant (e.g., cheap, moderate, expensive)",
+      },
+    },
+    required: [],
+  },
+}
+
+If you choose to call a function ONLY reply in the following format with no prefix or suffix:
+
+<function=example_function_name>{"example_name": "example_value"}</function>
+""",
+"function_calling_mapping": """You have access to the following function:
+
+Use the function 'query_restaurant_kb' to 'Retrieve restaurant details based on specified name, food type, area, or price range':
+{
+  name: "query_restaurant_kb",
+  description: "Retrieve restaurant details based on specified name, food type, area, or price range",
+  parameters: {
+    type: "object",
+    properties: {
+      name: {
+        type: "string",
+        description: "The name of the restaurant (if provided)",
+      },
+      food: {
+        type: "string",
+        description: "Type of food (e.g., italian, mexican, chinese, etc.)",
+      },
+      area: {
+        type: "string",
+        description: "Location area (e.g., north, south, east, west, or centre)",
+      },
+      pricerange: {
+        type: "string",
+        description: "Price range of the restaurant (e.g., cheap, moderate, expensive)",
+      },
+    },
+    required: [],
+  },
+}
+
+Map the values from the message for 'food', 'area', and 'price' fields to the following options:
+
+- Food types: italian, international, indian, chinese, modern european, european, british, gastropub, mexican, lebanese, vietnamese, spanish, french, japanese, portuguese, korean, turkish, asian oriental, african, mediterranean, seafood, thai, north american
+- Areas: north, south, centre, east, west
+- Price ranges: cheap, moderate, expensive
+
+For example, if the message says "high price," map it to "expensive." If the term can be mapped to one of these values, use the corresponding option.
+
+If you choose to call a function ONLY reply in the following format with no prefix or suffix:
+
+<function=example_function_name>{"example_name": "example_value"}</function>
+
+However, if the message does not require querying the restaurant knowledge base, simply provide the direct response to the user.
+
+Reminder:
+- If looking for real time information use relevant functions before falling back to brave_search
+- Function calls MUST follow the specified format, start with <function= and end with </function>
+- Required parameters MUST be specified
+- Only call one function at a time
+- Put the entire function call reply on one line
+"""
+}
+
 USER_INSTRUCTIONS = {
     "diag_1": "Look for a restaurant called \"The Copper Kettle\". If that is not available, look for any restaurant serving British food; if there aren't any, look for any place in the North.",
     "diag_2": "Look for a restaurant called \"The Missing Sock\". If not available, look for a cheap place; if not available, look for international food.",

@@ -1,0 +1,322 @@
+the pizza hut cherry hinton is moderately priced and in the south part of town .   Would you like their location ?
+food, pizza
+the pizza hut cherry hinton is moderately priced and in the south part of town .   Would you like their location ?
+pricerange, moderate
+It is an expensive european restaurant in the north part of town . Would you like to make a booking ?
+name, expensive european restaurant
+I 'm sorry , but Ask is not in the south part of town . There are 2 restaurants in the south part of town and in the cheap price range . Would you like Portuguese or Chinese food ?
+food, portuguese,chinese
+I 'm sorry , but Ask is not in the south part of town . There are 2 restaurants in the south part of town and in the cheap price range . Would you like Portuguese or Chinese food ?
+area, south
+For Town Centre , there are African , Asian Oriental , and British options . Which of these would you prefer ?
+food, african, asian oriental, british
+For Town Centre , there are African , Asian Oriental , and British options . Which of these would you prefer ?
+area, centre
+There are five restaurants in the moderate price range . They sever british and asian oriental , which are you looking for ?
+food, british, asian oriental
+I 'm sorry , there are no international restaurants listed in that area .   Would you like to try something else ?
+food, international
+Yes . da vinci pizzeria restaurant in the north part of town and in the cheap price range .   Would you like more information for them ?
+food, italian
+The address for the vietnamese restaurant Thanh Binh is 17 Magdalene Street City Centre and their phone number is 01223 362456 .
+area, centre
+The address for the vietnamese restaurant Thanh Binh is 17 Magdalene Street City Centre and their phone number is 01223 362456 .
+address, 17 Magdalene Street
+Indian food .   The address is 7 Milton Road Chesterton and the phone number is 01223 360966 .   Is there anything else I can help you find ?
+name, Indian food
+Reservation booked with The Curry Garden for Sunday at 11:30am for 8 people .   Your reservation will be held for 15 minutes . Reference number is 6GRFMVDJ .
+food, indian
+curry prince is located at 451 newmarket road fen ditton . Is there anything else I can help you with ?
+food, indian
+curry prince is located at 451 newmarket road fen ditton . Is there anything else I can help you with ?
+address, 451 Newmarket Road, Fen Ditton
+Yu Garden is located at 529 Newmarket Road Fen Ditton , C.B 5 , 8 P.A , and the number is 01223 248882 .
+postcode, C.B 5 , 8 P.A
+I am sorry , I ca n't find any restaurant serves world food in the north . Is there another type of food or area you might be interested in today ?
+food, world food
+I am sorry , I ca n't find any restaurant serves world food in the north . Is there another type of food or area you might be interested in today ?
+area, north
+The restaurant serves European food . Their phone number is 01223363270 . Anything else ?
+name, The restaurant
+Okay , I 've booked you at Little Seoul , a korean place that is expensive in the centre , with reference number PTWG73V3 . May I help with anything else ?
+food, korean
+Okay , I 've booked you at Little Seoul , a korean place that is expensive in the centre , with reference number PTWG73V3 . May I help with anything else ?
+pricerange, expensive
+Fitzbillies restaurant serves British food , is located in the center of town and is in the expensive price range .
+area, centre
+fitzbillies restaurant is located at 51 Trumpington Street City Centre .   Can I help you with anything else ?
+area, City Centre
+fitzbillies restaurant is located at 51 Trumpington Street City Centre .   Can I help you with anything else ?
+address, 51 Trumpington Street
+Sorry , I ca n't find any steakhouses . Would you be interested in moderately priced British cuisine instead ?
+pricerange, moderate
+I found five expensive restaurants on the south side of town . Would you prefer Chinese , Indian , Italian or Mexican ?
+choice, 5
+the missing sock is located at Finders Corner Newmarket Road and their phone number is 01223 812660 .
+name, Finders Corner
+the missing sock is located at Finders Corner Newmarket Road and their phone number is 01223 812660 .
+address, Newmarket Road
+Da Vinci pizzeria is in the north part of town and in the cheap price range .   Would you like their location ?
+food, italian
+Da vinci pizzeria serves is in the north part of town and in the cheap price range .   Would you like their location ?
+food, italian
+I 'm sorry , there are no international food restaurants on the south side of town . Would you like another type of food ?
+food, international
+I 'm sorry , there are no international food restaurants on the south side of town . Would you like another type of food ?
+area, south
+There are the Peking Restaurant , which is expensive , the Good Luck Chinese Food Takeaway , which is also expensive , and the Lucky Star , which is cheap .
+food, chinese
+There are the Peking Restaurant , which is expensive , the Good Luck Chinese Food Takeaway , which is also expensive , and the Lucky Star , which is cheap .
+food, chinese
+Cambridge Leisure Park Clifton Way Cherry Hinton 01223 244277
+name, Cambridge Leisure Park Clifton Way Cherry Hinton
+Cambridge Leisure Park Clifton Way Cherry Hinton 01223 244277
+address, Clifton Way Cherry Hinton
+Cambridge Leisure Park Clifton Way Cherry Hinton 01223 244277
+phone, 01223 244277
+How about asian cuisine ?   It is an expensive restaurant located at 52 Mill Road in Centre .
+food, asian oriental
+How about asian cuisine ?   It is an expensive restaurant located at 52 Mill Road in Centre .
+area, centre
+How about asian cuisine ?   It is an expensive restaurant located at 52 Mill Road in Centre .
+address, 52 Mill Road
+gourmet burger kitchen is in the expensive price range their phone number is 01223 312598 and their address is Regent Street City Centre
+area, City Centre
+gourmet burger kitchen is in the expensive price range their phone number is 01223 312598 and their address is Regent Street City Centre
+address, Regent Street
+I have several places , would you like me to try to book you into Curry Garden ?
+food, indian
+Would you like Chinese or Indian food ?
+food, chinese or indian
+Golden wok serves Chinese food , their phone number is 01223 350688 and their postcode is C.B 4 , 3 H.L.
+postcode, CB4 3HL
+There are no restaurants serving Australasian food . Would you like something else ?
+food, Australasian
+There are two restaurants available , nandos and nandos city centre . One is in the south and one is in the centre .
+area, centre
+How about nandos ? It is a cheap restraunt on Cambridge Leisure Park Clifton Way
+food, chicken
+There are two , Nandos City Centre as well as Nandos in the south part of the city , do you have a preference ?
+food, african
+There are two , Nandos City Centre as well as Nandos in the south part of the city , do you have a preference ?
+area, centre
+There are two , Nandos City Centre as well as Nandos in the south part of the city , do you have a preference ?
+food, african
+grafton hotel restaurant is an expensive british restaurant in the east part of town . Their address is Grafton Hotel 619 Newmarket road Fen Ditton and their phone number is 01223 241387
+address, Grafton Hotel, 619 Newmarket Road, Fen Ditton
+there are two Indian restaurants , Royal Spice and The Nirala .
+choice, 2
+The address for Thanh Binh is 17 Magdalene Street City Centre . Is ther anything else I can help you with ?
+area, centre
+The address for Thanh Binh is 17 Magdalene Street City Centre . Is ther anything else I can help you with ?
+address, 17 Magdalene Street
+I found a listing for the Slug and Lettuce .   The address is 34 - 35 Green Street in the center of town .   It serves gastropub food .
+area, centre
+Yes , 4 . stazione restaurant and coffee bar , clowns cafe , don pasquale pizzeria , and caffe uno .
+food, italian
+I was able to book you at another Italian place by the name of Clowns Caafe , your reference number is BAOHHC1Z , is there anything else that i can assist with ?
+food, italian
+Okay I have pulled up two matches . An indian restaurant and an italian restaurant .
+choice, 2
+Yes . I have successfully books you at the shiraz resturant , address 84 Regent Street City Centre . Your reference number is 9OE645NY . You should arrive within 15 minutes of your time .
+area, centre
+Yes . I have successfully books you at the shiraz resturant , address 84 Regent Street City Centre . Your reference number is 9OE645NY . You should arrive within 15 minutes of your time .
+address, 84 Regent Street
+There are several expensive restaurants in the south part of town . Do you prefer mexican , indian , italian , or chinese ?
+food, mexican, indian, italian, chinese
+their phone number is 01223 354382 and address is 24 Green Street City Centre .
+area, centre
+their phone number is 01223 354382 and address is 24 Green Street City Centre .
+address, 24 Green Street
+De Luca Cucina and Bar is moderately priced and serves modern European food .
+pricerange, moderate
+There are 33 expensive resturants in the city center .   We could narrow it down more by food type . What type of food would you like ?
+area, centre
+Bedouin serves African food , is in the center , and in the expensive price range . Do you want me to book this restaurant ?
+area, centre
+Certainly ! There are 3 options for moderately priced restaurants in the West : British , Indian or Italian . Do you have a preference ?
+pricerange, moderate
+There is not a Caribbean restaurant in the moderate price range . Would you like a different restaurant ?
+food, caribbean
+There is not a Caribbean restaurant in the moderate price range . Would you like a different restaurant ?
+choice, Would you like a different restaurant ?
+There is not a Caribbean restaurant in the moderate price range . Would you like a different restaurant ?
+pricerange, moderate
+la tasca is located at 14 -16 Bridge Street and the postcode is C.B 2 , 1 U.F.   Their phone number is 1223 464630 .   May I help you with anything else ?
+postcode, C.B 2 , 1 U.F.
+la margherita is located at 15 magdalene street city centre and the phone number is 01223 315232 . Is there anything else I can help you with ?
+food, italian
+la margherita is located at 15 magdalene street city centre and the phone number is 01223 315232 . Is there anything else I can help you with ?
+area, centre
+la margherita is located at 15 magdalene street city centre and the phone number is 01223 315232 . Is there anything else I can help you with ?
+address, 15 Magdalene Street
+There is an expensive restaurant that serves mediterranean food located at Thompsons Lane Fen Ditton . Their phone number is 01223 362525 .
+name, There is an expensive restaurant that serves mediterranean food located at Thompsons Lane Fen Ditton
+I was able to successfully book at table for 5 at Peking restaurant for 11:15 . Your reference number is WOK3FTDI . Your table will be reserved for 15 minutes .
+name, Peking restaurant
+We have four restaurant in the cheap price serving chinese food , can I help you with anything else ?
+choice, 4
+charlie chan is located at regent street city centre and its phone number is 01223 361763 . Is there anything else I can help you with ?
+area, centre
+charlie chan is located at regent street city centre and its phone number is 01223 361763 . Is there anything else I can help you with ?
+address, regent street
+There are two restaurants serving Thai food . Is the expensive price range okay for you ?
+choice, 2
+The address is 24 Green Street City Centre , and the phone number is 01223 354382 .
+area, centre
+The address is 24 Green Street City Centre , and the phone number is 01223 354382 .
+address, 24 Green Street
+There are no Irish restaurants in the cheap price range . Would you like something else ?
+food, irish
+There are no Irish restaurants in the cheap price range . Would you like something else ?
+pricerange, cheap
+There is one moderately priced gastropub in the town centre called The Cow Pizza Kitchen And Bar .
+choice, 1
+There is one moderately priced gastropub in the town centre called The Cow Pizza Kitchen And Bar .
+pricerange, moderate
+Restaurant one seven is also British cuisine , moderate priced , in the center of town and they are able to accommodate your reservation .
+area, centre
+Restaurant one seven is also British cuisine , moderate priced , in the center of town and they are able to accommodate your reservation .
+address, centre of town
+Sure . There is a Chinese Restaurant and a Portuguese Restaurant . Would you like me to book one for you ?
+name, Chinese Restaurant
+Sure . There is a Chinese Restaurant and a Portuguese Restaurant . Would you like me to book one for you ?
+name, Portuguese Restaurant
+No , I 'm sorry .   Either Chinese or Portuguese .
+food, chinese or portuguese
+I 'm sorry . There are no restaurants serving English food near your area .
+food, english
+Ask serves Italian food , is in the center of town and in the cheap price range . Their phone number is 01223 364917 and their postcode is C.B 2 , 1 U.F.
+area, centre
+Ask serves Italian food , is in the center of town and in the cheap price range . Their phone number is 01223 364917 and their postcode is C.B 2 , 1 U.F.
+postcode, CB2 1UF
+Pizza Hut Cherry Hinton is a moderately priced Italian restaurant in the south of town , and Restaurant Alimentum is a moderately priced modern european restaurant in the south of town .
+pricerange, moderate
+Pizza Hut Cherry Hinton is a moderately priced Italian restaurant in the south of town , and Restaurant Alimentum is a moderately priced modern european restaurant in the south of town .
+pricerange, moderate
+I 'm sorry , there are no expensive restaurants that serve indonesian food . Can I help you with something else ?
+food, indonesian
+I 'm sorry , there are no expensive restaurants that serve indonesian food . Can I help you with something else ?
+pricerange, expensive
+Sure , bangkok city is located at 24 green street city centre and its phone number is 01223 354382 . Is there anything else I can help you with ?
+area, centre
+Sure , bangkok city is located at 24 green street city centre and its phone number is 01223 354382 . Is there anything else I can help you with ?
+address, 24 green street
+The address is Regent Street City Centre . Would you like me to book a table ?
+area, centre
+The address is Regent Street City Centre . Would you like me to book a table ?
+address, Regent Street
+I have found some . Would you like Italian , Chinese , Asian Oriental , Indian , or Spanish food ?
+food, italian, chinese, asian oriental, indian, spanish
+The phone number to Prezzo , which is moderately priced , is 01799 521260 . Is there anything else I can assist you with today ?
+pricerange, moderate
+Would you prefer italian or vietnamese food ?
+food, italian, vietnamese
+Sure the Phone 01223363471 , address 40210 Millers Yard City Centre and postcode cb21rq for dojo noodle bar . May I help with anything else ?
+area, centre
+Sure the Phone 01223363471 , address 40210 Millers Yard City Centre and postcode cb21rq for dojo noodle bar . May I help with anything else ?
+address, 40210 Millers Yard
+It is an expensive British restaurant on the west side of town . Would you like the address ?
+name, It is an expensive British restaurant on the west side of town
+How about Kymmoy ? It 's an Asian restaurant in Expensive price range , located in Centre area .
+food, Asian oriental
+The address is 169 High Street Chesterton Chesterton and the phone number is 01223 356555 .
+name, The address is 169 High Street Chesterton Chesterton
+Yippee noodle bar is available if you would like to book that .
+food, chinese
+It is not , but The Cow Pizza Kitchen and Bar is a gastropub in the center of town , and it is a moderate price range . Would you like to book it ?
+area, centre
+The phone number for meghna is 01223 727410 and they are located at 205 Victoria Road Chesterton .   The postcode is C.B 4 , 3 L.F.
+postcode, CB4 3LF
+There is one in the centre of town and one in the north area of town . Which one would you prefer ?
+choice, 1
+Restaurant Two Two is a French restaurant located in the north part of town , but it is pricey .   Would you like more information ?
+pricerange, expensive
+There 's no resturant serving polish food . do you want something else ?
+food, polish
+Bangkok city is a thai restaurant . It 's address is 24 green street city centre and phone number is 01223 354382
+area, centre
+Bangkok city is a thai restaurant . It 's address is 24 green street city centre and phone number is 01223 354382
+address, 24 green street
+There is not a restaurant serving Irish food in the expensive price range .   Would you like another restaurant ?
+pricerange, expensive
+Little seoul is located at 108 Regent Street City Centre .   May I help you with anything else today ?
+area, City Centre
+Little seoul is located at 108 Regent Street City Centre .   May I help you with anything else today ?
+address, 108 Regent Street
+I have them at 183 East Road City Centre , cb11bg .
+area, City Centre
+I have them at 183 East Road City Centre , cb11bg .
+address, 183 East Road
+If you 'd like to eat in the city center , I recommend the curry garden . Their phone is 01223302330 . Can I book you a table ?
+food, indian
+If you 'd like to eat in the city center , I recommend the curry garden . Their phone is 01223302330 . Can I book you a table ?
+area, centre
+There are no restaurants that meet that criteria . Would you like me to look for Polish food in another area ?
+food, Polish
+I do not have any polish restaurants in the cheap price range . Would you like a different restaurant or cuisine ?
+pricerange, cheap
+I booked a table at The Good Luck Chinese Food Takeaway .   Your reference number is MDK9A3PR .   The restaurant is at 82 Cherry Hinton Road .   Will that be all ?
+food, chinese
+Cocum 's address is 71 Castle Street City Centre . Is there anything else I can help you with today ?
+area, centre
+Cocum 's address is 71 Castle Street City Centre . Is there anything else I can help you with today ?
+address, 71 Castle Street
+There is also an Italian and British restaurant .   Would you prefer one of these ?
+food, italian, british
+Nandos 's address is Cambridge Leisure Park Clifton Way C.B 1 , 7 D.Y
+address, Cambridge Leisure Park Clifton Way C.B 1, 7 D.Y
+Nandos 's address is Cambridge Leisure Park Clifton Way C.B 1 , 7 D.Y
+postcode, CB1 7DY
+Yes , there is one called golden wok in the north part of town . do you want this one ?
+choice, 1
+Sorry , there are no moderately priced seafood restaurants . Can I help you find something else instead ?
+pricerange, moderate
+There are 4 moderately priced Chinese restaurants in town . Is there a particular area you are wanting to eat in ?
+pricerange, moderate
+I have reserved a table for 4 at Jinling Noodle Bar , 11 Peas Hill in the city centre ( Tel : 01223566188 ) on Friday at 18:15 . The reference number is K9JAW7FT .
+area, centre
+I have reserved a table for 4 at Jinling Noodle Bar , 11 Peas Hill in the city centre ( Tel : 01223566188 ) on Friday at 18:15 . The reference number is K9JAW7FT .
+address, 11 Peas Hill
+Loch Fyne is a restaurant in the city centre that serves seafood . Would you like more information ?
+area, city centre
+On the south end , in the expensive price range , we have Mexican , Italian , Indian , and Chinese foods to choose from . Do any of these sound good ?
+food, Mexican, Italian, Indian, Chinese
+Yes , I would recommend the Peking Restaurant , located at 10 Homerton Street City Centre .   Could I reserve a table for you ?
+area, City Centre
+Yes , I would recommend the Peking Restaurant , located at 10 Homerton Street City Centre .   Could I reserve a table for you ?
+address, 10 Homerton Street
+I found no restaurants serving Danish food in the expensive price range .
+food, danish
+I found no restaurants serving Danish food in the expensive price range .
+choice, no restaurants
+I found no restaurants serving Danish food in the expensive price range .
+pricerange, expensive
+There are a few of them .   Would you prefer the centre of town or the west area ?
+area, centre, west
+There are a few restaurants that will meet your needs . I suggest The Copper Kettle at 4 Kings Parade City Centre .
+area, City Centre
+There are a few restaurants that will meet your needs . I suggest The Copper Kettle at 4 Kings Parade City Centre .
+address, 4 Kings Parade
+Eraina is located at Free School Lane City Centre , and their phone number is 01223 368786
+area, centre
+Eraina is located at Free School Lane City Centre , and their phone number is 01223 368786
+address, Free School Lane
+The Cambridge Lodge Restaurant is located at Cambridge Lodge Hotel 139 Huntingdon Road City Centre . Their number is 01223 355166 . Is there anything else I can find for you ?
+area, centre
+The Cambridge Lodge Restaurant is located at Cambridge Lodge Hotel 139 Huntingdon Road City Centre . Their number is 01223 355166 . Is there anything else I can find for you ?
+address, Cambridge Lodge Hotel 139 Huntingdon Road
+I would recommend Eraina , it is at Free School Lane City Centre .
+area, centre
+I would recommend Eraina , it is at Free School Lane City Centre .
+address, Free School Lane
+The address for the restaurant is Cambridge City Football Club Milton Road Chesterton and the phone number is 01223363270 .   You will fond the restaurant in the North area of town .
+name, Cambridge City Football Club
+The address for the restaurant is Cambridge City Football Club Milton Road Chesterton and the phone number is 01223363270 .   You will fond the restaurant in the North area of town .
+area, north
+The address for the restaurant is Cambridge City Football Club Milton Road Chesterton and the phone number is 01223363270 .   You will fond the restaurant in the North area of town .
+address, Milton Road Chesterton
+Try curry prince or pizza hut fen ditton
+food, indian
+Try curry prince or pizza hut fen ditton
+food, italian

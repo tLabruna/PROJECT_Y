@@ -80,13 +80,16 @@ def count_slots(d_act):
     return c
 
 def slot_present(slot_name, slot_value, d_act):
+    slot_name = map_to_da_slot(slot_name)
     for domain_intent in d_act:
         for da in d_act[domain_intent]:
             da_slot_name = da[0].lower()
             da_slot_value = da[1].lower()
-            if map_to_da_slot(slot_name) == da_slot_name \
-                and slot_value.lower() == da_slot_value:
-                return True
+            if slot_name == da_slot_name:
+                if slot_value.lower() == da_slot_value or \
+                    (slot_name == "name" and (slot_value.lower() in da_slot_value or \
+                                              da_slot_value in slot_value.lower())):
+                    return True
     return False
 
 
@@ -102,7 +105,7 @@ tot_slots = 0
 
 i = 0
 
-f = open("log_slot_prompt_1.txt", "a")
+f = open("log_slot_prompt_4.txt", "a")
 
 for d in data:
     i += 1

@@ -7,9 +7,12 @@ from llama import Dialog, Llama
 import torch, openai, json, re
 import torch.nn as nn
 from retriever_query import find_restaurants
-from utils import load_json, parse_input_string
+from utils import load_json, parse_input_string_function
 from retriever_pipeline import build_slot_extraction_prompt, build_system_prompt, parse_query_values, retrieve_restaurants
 from build_prompt import kb_to_prompt
+from templates import LLAMA_INSTRUCTIONS
+
+torch.cuda.empty_cache()
 
 # os.environ["CUDA_VISIBLE_DEVICES"] = "0,1,2,3"
 
@@ -62,7 +65,7 @@ class ChatGenerator:
             azure_endpoint = "https://hlt-nlp.openai.azure.com/"
         )
     
-    def prompt_model(self, message="", i=-1, max_gen_len=None, temperature=0.6, top_p=0.9, single_prompt=False, additional_system_prompt=""):
+    def prompt_model(self, message="", i=-1, max_gen_len=None, temperature=0.6, top_p=0.9, single_prompt=False, additional_system_prompt="", add_to_context=True):
         """
         This method prompts the Llama model. The single prompt method means
         that we are not keeping track of the conversation. Otherwise, we store
@@ -128,7 +131,7 @@ class ChatGenerator:
                 )
                 system_output = response.choices[0].message.content.strip()
 
-        if not single_prompt:
+        if not single_prompt and add_to_context:
             self.add_to_context(system_output, "assistant", i)
         
         return system_output
@@ -146,11 +149,16 @@ class ChatGenerator:
         else:
             self.dialogues = [[message_formatted]]
 
-    def remove_from_context(self, i):
-        if self.dialogues[i][0]["role"] == "system":
-            self.dialogues[i] = [self.dialogues[i][0]] + self.dialogues[i][2:]
+    def remove_from_context(self, i=-1, j=0):
+        if j == 0:
+            if self.dialogues[i][0]["role"] == "system":
+                self.dialogues[i] = [self.dialogues[i][0]] + self.dialogues[i][2:]
+            else:
+                self.dialogues[i] = self.dialogues[i][1:]   
+        elif j == -1:
+            self.dialogues[i] = self.dialogues[i][:-1]
         else:
-            self.dialogues[i] = self.dialogues[i][1:]   
+            self.dialogues[i] = self.dialogues[i][:j] + self.dialogues[i][j+1:]
         return len(self.dialogues[i])
     
     def add_system_prompt(self, message, i=-1, first_turn=True):
@@ -175,35 +183,37 @@ class ChatGenerator:
         else:
             self.dialogues = [[message_formatted]]
     
-    def retrieve_from_user_message(self, user_message, i=-1):
-        # Build prompt including user input
-        prompt = build_slot_extraction_prompt(user_message)
-        # print(prompt)
+    def retrieve_from_user_message(self, i=-1):
+        
+        # Add function call instructions as user prompt
+        prompt = LLAMA_INSTRUCTIONS["function_calling_mapping"]
+        self.add_to_context(prompt, "user", i)
 
-        # Prompt model to get the slot values
-        query_values_str = self.prompt_model(prompt,single_prompt=True)
-        print(query_values_str)
+        # Prompt model to get the function call or direct response
+        query_values_str = self.prompt_model(add_to_context=False)
 
-        # Parse the slot values in a structured form                
-        parsed_query_values_list = parse_input_string(query_values_str, "user")
-        print(parsed_query_values_list)
+        # Delete last user prompt
+        self.remove_from_context(i=i, j=-1)
+        # If function call, parse the slot values in a structured form                
+        parsed_query_values = parse_input_string_function(query_values_str, "user")
 
-        output = ""
+        if parsed_query_values:
+            # Get retrieved restaurants
+            retrieved_restaurants = self.query_restaurant_kb(name=parsed_query_values["name"], area=parsed_query_values["area"], food=parsed_query_values["food"], pricerange=parsed_query_values["pricerange"])
 
-        for parsed_query_values in parsed_query_values_list:
-
-            if "name" in parsed_query_values and "area" in parsed_query_values and "food" in parsed_query_values and "pricerange" in parsed_query_values and (parsed_query_values["name"] or parsed_query_values["area"] or parsed_query_values["food"] or parsed_query_values["pricerange"]):
-                # Get retrieved restaurants
-                retrieved_restaurants = self.query_restaurant_kb(name=parsed_query_values["name"], area=parsed_query_values["area"], food=parsed_query_values["food"], pricerange=parsed_query_values["pricerange"])
-
-                if len(retrieved_restaurants) == 0:
-                    output = "No restaurant have been found based on user criterias. Don't provide information on any restaurant and inform the user that they should revise their criteria."
-                elif len(retrieved_restaurants) >= 10:
-                    output = "Too many restaurants have been found. Don't provide information on any restaurant and inform the user that they should add more criteria, so you can refine your search."
-                else:
-                    # Build final prompt
-                    return kb_to_prompt("Your answer should strictly rely to the following Knowledge Base.", retrieved_restaurants)
-        return output
+            if len(retrieved_restaurants) == 0:
+                self.add_to_context("No restaurant have been found based on user criterias. Don't provide information on any restaurant and inform the user that they should revise their criteria.", "system", i)
+            elif len(retrieved_restaurants) >= 10:
+                self.add_to_context("Too many restaurants have been found. Don't provide information on any restaurant and inform the user that they should add more criteria, so you can refine your search.", "system", i)
+            else:
+                # Build final prompt
+                self.add_to_context(kb_to_prompt("Your answer should strictly rely to the following Knowledge Base.", retrieved_restaurants), "system", i)
+            
+            response = self.prompt_model(i=i)
+            return response
+        
+        else:
+            return query_values_str
     
     def start_live_mode(self, retrieve=False):
         """
@@ -218,10 +228,12 @@ class ChatGenerator:
             log.append({"turn": i, "role": "user", "text": user_message})
             i += 1
 
-            if retrieve:
-                self.retrieve_from_user_message(user_message)
+            self.add_to_context(user_message, "user")
 
-            system_message = self.prompt_model(user_message)
+            if retrieve:
+                system_message = self.retrieve_from_user_message()
+            else:
+                system_message = self.prompt_model()
 
             print(f"System: {system_message}")
             log.append({"turn": i, "role": "system", "text": system_message})
@@ -241,13 +253,14 @@ class ChatGenerator:
             if escape_token and escape_token in user_message: break
             log.append({"turn": i, "role": "user", "text": user_message})
             i += 1
-            additional_system_prompt = ""
+            self.add_to_context(user_message, "user", system_i)
             if retrieve:
-                additional_system_prompt = self.retrieve_from_user_message(user_message, system_i)
+                system_message = self.retrieve_from_user_message(system_i)
+            else:
+                system_message = self.prompt_model(system_i)
             if verbose:
                 print(self.dialogues)
-                print("--------------")
-            system_message = self.prompt_model(user_message, system_i, additional_system_prompt = additional_system_prompt)
+                print("--------------")            
             if escape_token and escape_token in user_message: break
             log.append({"turn": i, "role": "system", "text": system_message})
             # self.add_to_context(system_message, "user", user_i)
@@ -344,7 +357,7 @@ Output:"""
     kb_file_path = 'KB/restaurant_db.json'
     restaurants = load_json(kb_file_path)
     llama_gen.restaurants = restaurants
-    parsed_query_values = parse_input_string(query_values_str, "system")
+    parsed_query_values = parse_input_string_function(query_values_str, "system")
     print(parsed_query_values)
     if "name" in parsed_query_values and "area" in parsed_query_values and "food" in parsed_query_values and "pricerange" in parsed_query_values:
         filtered_restaurants = llama_gen.query_restaurant_kb(name=parsed_query_values["name"], area=parsed_query_values["area"], food=parsed_query_values["food"], pricerange=parsed_query_values["pricerange"])
