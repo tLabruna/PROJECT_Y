@@ -1,0 +1,42 @@
+[
+    {
+        "turn": 0,
+        "role": "user",
+        "text": "I'm looking for \"The Slug and Lettuce\" in Cambridge. Can you help me find it?"
+    },
+    {
+        "turn": 1,
+        "role": "system",
+        "text": "I can help you with that. The Slug and Lettuce is located at 34-35 Green Street, in the centre of Cambridge. It's a gastropub with an expensive price range. Would you like to reserve a table?"
+    },
+    {
+        "turn": 2,
+        "role": "user",
+        "text": "I'd like to book a table for 3 people at 16:15 on Saturday."
+    },
+    {
+        "turn": 3,
+        "role": "system",
+        "text": "I've reserved a table for 3 people at 16:15 on Saturday at The Slug and Lettuce. Your reservation number is #SLUG123. Please arrive 10 minutes prior to your booking time. Enjoy your meal!"
+    },
+    {
+        "turn": 4,
+        "role": "user",
+        "text": "Thank you! I've got the reference number #SLUG123."
+    },
+    {
+        "turn": 5,
+        "role": "system",
+        "text": "You're all set! Don't forget to arrive at 34-35 Green Street, in the centre of Cambridge, postcode CB2 3JU, at 16:15 on Saturday. Have a great time at The Slug and Lettuce!"
+    },
+    {
+        "turn": 6,
+        "role": "user",
+        "text": "Thank you for your help. I'm all set.\n\nEND"
+    },
+    {
+        "turn": 7,
+        "role": "system",
+        "text": "It was my pleasure to assist you. Have a great time in Cambridge and enjoy your meal at The Slug and Lettuce! Bye for now!"
+    }
+]

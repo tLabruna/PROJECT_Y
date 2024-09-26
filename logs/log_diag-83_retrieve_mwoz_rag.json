@@ -1,0 +1,42 @@
+[
+    {
+        "turn": 0,
+        "role": "user",
+        "text": "I'm looking for a Brazilian restaurant in Cambridge. Do you know of any?"
+    },
+    {
+        "turn": 1,
+        "role": "system",
+        "text": "Sorry to say, but I couldn't find any Brazilian restaurants in Cambridge. If you'd like to try again with a different cuisine or location, I'd be happy to help!"
+    },
+    {
+        "turn": 2,
+        "role": "user",
+        "text": "No Brazilian restaurants in Cambridge. What about Korean food? Do you know of any Korean restaurants in the city?"
+    },
+    {
+        "turn": 3,
+        "role": "system",
+        "text": "Unfortunately, I couldn't find any Korean restaurants in Cambridge. Would you like me to suggest other cuisines or help with something else?"
+    },
+    {
+        "turn": 4,
+        "role": "user",
+        "text": "No Korean restaurants either. Can you just give me the phone number of any restaurant in Cambridge, regardless of the cuisine?"
+    },
+    {
+        "turn": 5,
+        "role": "system",
+        "text": "I can help with that. Here's a phone number for a restaurant in Cambridge:\n\nPhone: 01223324033\n\nThis is for Pizza Express, located on Regent Street in the city centre."
+    },
+    {
+        "turn": 6,
+        "role": "user",
+        "text": "Thank you for the phone number! I appreciate it.\n\nEND"
+    },
+    {
+        "turn": 7,
+        "role": "system",
+        "text": "You're welcome! It was my pleasure to help. If you need anything else, feel free to ask. Have a great day in Cambridge!"
+    }
+]

@@ -1,0 +1,42 @@
+[
+    {
+        "turn": 0,
+        "role": "user",
+        "text": "I'm looking for Cotto."
+    },
+    {
+        "turn": 1,
+        "role": "system",
+        "text": "Cotto is a British restaurant located at 183 East Road in the city centre. It's a moderate-priced restaurant with a phone number of 01223 3302010. Would you like to reserve a table?"
+    },
+    {
+        "turn": 2,
+        "role": "user",
+        "text": "No, I just want to know the price range."
+    },
+    {
+        "turn": 3,
+        "role": "system",
+        "text": "I made a mistake earlier. I can help you with that. Cotto's price range is moderate."
+    },
+    {
+        "turn": 4,
+        "role": "user",
+        "text": "That's good to know. Moderate price range is what I'm looking for. Thank you!"
+    },
+    {
+        "turn": 5,
+        "role": "system",
+        "text": "You're welcome! If you're ever in Cambridge and looking for a British meal, Cotto is a great option. Have a great day!"
+    },
+    {
+        "turn": 6,
+        "role": "user",
+        "text": "Thank you for your help! I'll definitely consider Cotto for my meal. Goodbye!\n\nEND"
+    },
+    {
+        "turn": 7,
+        "role": "system",
+        "text": "Goodbye! Have a great day and I hope you enjoy your meal at Cotto!"
+    }
+]

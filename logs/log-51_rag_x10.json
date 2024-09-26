@@ -1,0 +1,94 @@
+[
+    [
+        {
+            "role": "system",
+            "content": "You are a turist in the city of Cambridge and you are looking for a restaurant to dine in. Strictly follow the instructions given to you on the criteria by which looking for the restaurant. You don't need to follow all the instructions at once, instead follow them as the conversation continues. Be very brief, and go straight to the point. At the end, thank the system and say goodbye. When the conversation is over, after the farewell, return \"END\" (in caps lock).\n\nInstruction:\n[\"You are looking for a <span class='emphasis'>particular restaurant</span>. Its name is called <span class='emphasis'>anatolia</span>\", \"Once you find the <span class='emphasis'>restaurant</span> you want to book a table for <span class='emphasis'>5 people</span> at <span class='emphasis'>14:15</span> on <span class='emphasis'>monday</span>\", \"If the booking fails how about different <span class='emphasis'>restaurant</span> in the same <span class='emphasis'>area</span> and <span class='emphasis'>pricerange</span>\", \"Make sure you get the <span class='emphasis'>reference number</span>\"]"
+        },
+        {
+            "role": "user",
+            "content": "Hi, I'm here to help you find a restaurant."
+        },
+        {
+            "role": "assistant",
+            "content": "I'm looking for a restaurant called Anatolia."
+        },
+        {
+            "role": "user",
+            "content": "Anatolia is a Turkish restaurant located at 30 Bridge Street in the City Centre area. It's a moderate-priced restaurant. You can give them a call at 01223 362372. Would you like to reserve a table?"
+        },
+        {
+            "role": "assistant",
+            "content": "I'd like to book a table for 5 people at 14:15 on Monday."
+        },
+        {
+            "role": "user",
+            "content": "I've booked a table for 5 people at Anatolia for Monday at 14:15. Your reservation number is 421. Please arrive 10 minutes prior to your booking time."
+        },
+        {
+            "role": "assistant",
+            "content": "Thank you, I have the reference number 421. What if the booking fails, are there other restaurants in the same area and price range I can consider?"
+        },
+        {
+            "role": "user",
+            "content": "If your booking at Anatolia fails, you have several other options in the same area and price range. Here are a few recommendations:\n\n1. Efes Restaurant (King Street City Centre) - a Turkish restaurant with a moderate price range.\n2. Restaurant Tandoori Cambridge (6 Lensfield Road) - a Turkish restaurant with a moderate price range.\n3. Ali (47-53 Regent Street) - a Turkish restaurant with a moderate price range.\n4. Curry House (Jesus Lane Fen Ditton) - a Turkish restaurant with a moderate price range.\n5. Golden Margherita (40210 Millers Yard City Centre) - a Turkish restaurant with a moderate price range.\n6. Don (59 Hills Road City Centre) - a Turkish restaurant with a moderate price range.\n7. La Slug (21 Burleigh Street City Centre) - a Turkish restaurant with a moderate price range.\n8. Lan Restaurant (83 Regent Street) - a Turkish restaurant with a moderate price range.\n\nPlease note that availability and prices may vary."
+        },
+        {
+            "role": "assistant",
+            "content": "Thank you for the alternatives. Now, I'm all set to go to Anatolia. Thank you for your help, I appreciate it! Goodbye.\n\nEND"
+        }
+    ],
+    [
+        {
+            "role": "system",
+            "content": "You are the Cambridge TownInfo Centre, a system designed to help users maximize their experience in the city of Cambridge. Use a friendly and conversational tone while providing helpful and informative responses. All the information you provide must strictly rely on the Knowledge Base that you are provided with. If no Knowledge Base has been provided, don't give any domain information, and just say that you can't help. Ensure that your answers are accurate, relevant, and tailored to the user's needs. When you find the restaurant to reserve, give a random reservation number to the user. Be short and concise."
+        },
+        {
+            "role": "user",
+            "content": "I'm looking for a restaurant called Anatolia."
+        },
+        {
+            "role": "system",
+            "content": "Your answer should strictly rely to the following Knowledge Base.\n\nKnowledge Base:\n- {\"address\": \"30 Bridge Street City Centre\", \"area\": \"centre\", \"food\": \"turkish\", \"name\": \"anatolia\", \"phone\": \"01223362372\", \"postcode\": \"cb21uj\", \"pricerange\": \"moderate\"}\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Anatolia is a Turkish restaurant located at 30 Bridge Street in the City Centre area. It's a moderate-priced restaurant. You can give them a call at 01223 362372. Would you like to reserve a table?"
+        },
+        {
+            "role": "user",
+            "content": "I'd like to book a table for 5 people at 14:15 on Monday."
+        },
+        {
+            "role": "system",
+            "content": "Your answer should strictly rely to the following Knowledge Base.\n\nKnowledge Base:\n- {\"address\": \"30 Bridge Street City Centre\", \"area\": \"centre\", \"food\": \"turkish\", \"name\": \"anatolia\", \"phone\": \"01223362372\", \"postcode\": \"cb21uj\", \"pricerange\": \"moderate\"}\n"
+        },
+        {
+            "role": "assistant",
+            "content": "I've booked a table for 5 people at Anatolia for Monday at 14:15. Your reservation number is 421. Please arrive 10 minutes prior to your booking time."
+        },
+        {
+            "role": "user",
+            "content": "Thank you, I have the reference number 421. What if the booking fails, are there other restaurants in the same area and price range I can consider?"
+        },
+        {
+            "role": "system",
+            "content": "Your answer should strictly rely to the following Knowledge Base.\n\nKnowledge Base:\n- {\"address\": \"30 Bridge Street City Centre\", \"area\": \"centre\", \"food\": \"turkish\", \"name\": \"anatolia\", \"phone\": \"01223362372\", \"postcode\": \"cb21uj\", \"pricerange\": \"moderate\"}\n- {\"address\": \"King Street City Centre\", \"area\": \"centre\", \"food\": \"turkish\", \"name\": \"efes restaurant\", \"phone\": \"01223500005\", \"postcode\": \"cb11ln\", \"pricerange\": \"moderate\"}\n- {\"address\": \"6 Lensfield Road\", \"area\": \"centre\", \"food\": \"turkish\", \"name\": \"restaurant tandoori cambridge\", \"phone\": \"8617262253\", \"postcode\": \"cb41ha\", \"pricerange\": \"moderate\"}\n- {\"address\": \"47-53 Regent Street\", \"area\": \"centre\", \"food\": \"turkish\", \"name\": \"ali\", \"phone\": \"6358591385\", \"postcode\": \"cb13nf\", \"pricerange\": \"moderate\"}\n- {\"address\": \"Jesus Lane Fen Ditton\", \"area\": \"centre\", \"food\": \"turkish\", \"name\": \"curry house\", \"phone\": \"8621099339\", \"postcode\": \"cb23ar\", \"pricerange\": \"moderate\"}\n- {\"address\": \"40210 Millers Yard City Centre\", \"area\": \"centre\", \"food\": \"turkish\", \"name\": \"golden margherita\", \"phone\": \"1598500833\", \"postcode\": \"cb23nj\", \"pricerange\": \"moderate\"}\n- {\"address\": \"59 Hills Road City Centre\", \"area\": \"centre\", \"food\": \"turkish\", \"name\": \"don\", \"phone\": \"6625659930\", \"postcode\": \"cb12as\", \"pricerange\": \"moderate\"}\n- {\"address\": \"21 Burleigh Street City Centre\", \"area\": \"centre\", \"food\": \"turkish\", \"name\": \"la slug\", \"phone\": \"4151089944\", \"postcode\": \"cb23pp\", \"pricerange\": \"moderate\"}\n- {\"address\": \"83 Regent Street\", \"area\": \"centre\", \"food\": \"turkish\", \"name\": \"lan restaurant\", \"phone\": \"1905069994\", \"postcode\": \"cb21rq\", \"pricerange\": \"moderate\"}\n"
+        },
+        {
+            "role": "assistant",
+            "content": "If your booking at Anatolia fails, you have several other options in the same area and price range. Here are a few recommendations:\n\n1. Efes Restaurant (King Street City Centre) - a Turkish restaurant with a moderate price range.\n2. Restaurant Tandoori Cambridge (6 Lensfield Road) - a Turkish restaurant with a moderate price range.\n3. Ali (47-53 Regent Street) - a Turkish restaurant with a moderate price range.\n4. Curry House (Jesus Lane Fen Ditton) - a Turkish restaurant with a moderate price range.\n5. Golden Margherita (40210 Millers Yard City Centre) - a Turkish restaurant with a moderate price range.\n6. Don (59 Hills Road City Centre) - a Turkish restaurant with a moderate price range.\n7. La Slug (21 Burleigh Street City Centre) - a Turkish restaurant with a moderate price range.\n8. Lan Restaurant (83 Regent Street) - a Turkish restaurant with a moderate price range.\n\nPlease note that availability and prices may vary."
+        },
+        {
+            "role": "user",
+            "content": "Thank you for the alternatives. Now, I'm all set to go to Anatolia. Thank you for your help, I appreciate it! Goodbye.\n\nEND"
+        },
+        {
+            "role": "system",
+            "content": "Your answer should strictly rely to the following Knowledge Base.\n\nKnowledge Base:\n- {\"address\": \"30 Bridge Street City Centre\", \"area\": \"centre\", \"food\": \"turkish\", \"name\": \"anatolia\", \"phone\": \"01223362372\", \"postcode\": \"cb21uj\", \"pricerange\": \"moderate\"}\n- {\"address\": \"King Street City Centre\", \"area\": \"centre\", \"food\": \"turkish\", \"name\": \"efes restaurant\", \"phone\": \"01223500005\", \"postcode\": \"cb11ln\", \"pricerange\": \"moderate\"}\n- {\"address\": \"6 Lensfield Road\", \"area\": \"centre\", \"food\": \"turkish\", \"name\": \"restaurant tandoori cambridge\", \"phone\": \"8617262253\", \"postcode\": \"cb41ha\", \"pricerange\": \"moderate\"}\n- {\"address\": \"47-53 Regent Street\", \"area\": \"centre\", \"food\": \"turkish\", \"name\": \"ali\", \"phone\": \"6358591385\", \"postcode\": \"cb13nf\", \"pricerange\": \"moderate\"}\n- {\"address\": \"Jesus Lane Fen Ditton\", \"area\": \"centre\", \"food\": \"turkish\", \"name\": \"curry house\", \"phone\": \"8621099339\", \"postcode\": \"cb23ar\", \"pricerange\": \"moderate\"}\n- {\"address\": \"40210 Millers Yard City Centre\", \"area\": \"centre\", \"food\": \"turkish\", \"name\": \"golden margherita\", \"phone\": \"1598500833\", \"postcode\": \"cb23nj\", \"pricerange\": \"moderate\"}\n- {\"address\": \"59 Hills Road City Centre\", \"area\": \"centre\", \"food\": \"turkish\", \"name\": \"don\", \"phone\": \"6625659930\", \"postcode\": \"cb12as\", \"pricerange\": \"moderate\"}\n- {\"address\": \"21 Burleigh Street City Centre\", \"area\": \"centre\", \"food\": \"turkish\", \"name\": \"la slug\", \"phone\": \"4151089944\", \"postcode\": \"cb23pp\", \"pricerange\": \"moderate\"}\n- {\"address\": \"83 Regent Street\", \"area\": \"centre\", \"food\": \"turkish\", \"name\": \"lan restaurant\", \"phone\": \"1905069994\", \"postcode\": \"cb21rq\", \"pricerange\": \"moderate\"}\n"
+        },
+        {
+            "role": "assistant",
+            "content": "It was my pleasure to assist you. I hope you have a great time at Anatolia and enjoy your meal. If you need any more help or have any other questions in the future, don't hesitate to reach out. Goodbye!"
+        }
+    ]
+]

@@ -1,0 +1,42 @@
+[
+    {
+        "turn": 0,
+        "role": "user",
+        "text": "I'm looking for a Japanese restaurant in Cambridge. Can you help me with that?"
+    },
+    {
+        "turn": 1,
+        "role": "system",
+        "text": "Sorry to hear that! Unfortunately, I couldn't find any Japanese restaurants in Cambridge. Can you be more specific about what you're looking for, like location or type of cuisine? I'd be happy to help you revise your search criteria!"
+    },
+    {
+        "turn": 2,
+        "role": "user",
+        "text": "Actually, I've found a Japanese restaurant in Cambridge. I'd like to know more about it. What's the name of the restaurant?"
+    },
+    {
+        "turn": 3,
+        "role": "system",
+        "text": "The Japanese restaurant you're looking for is Wagamama, located at 36 Saint Andrews Street in the centre of Cambridge. It's considered an expensive option. Would you like to make a reservation?"
+    },
+    {
+        "turn": 4,
+        "role": "user",
+        "text": "No, I'll just check the details. What's the phone number and postcode of Wagamama?"
+    },
+    {
+        "turn": 5,
+        "role": "system",
+        "text": "The phone number of Wagamama is 01223 462354 and the postcode is CB2 3AR."
+    },
+    {
+        "turn": 6,
+        "role": "user",
+        "text": "Thank you for the details. I'll make a note of that.\n\nEND"
+    },
+    {
+        "turn": 7,
+        "role": "system",
+        "text": "It was my pleasure to help. Have a great day in Cambridge!"
+    }
+]

@@ -1,0 +1,42 @@
+[
+    {
+        "turn": 0,
+        "role": "user",
+        "text": "I'm looking for a Singaporean restaurant in the east part of Cambridge. Do you know of any?"
+    },
+    {
+        "turn": 1,
+        "role": "system",
+        "text": "I'm not able to help with that request."
+    },
+    {
+        "turn": 2,
+        "role": "user",
+        "text": "How about Chinese food then?"
+    },
+    {
+        "turn": 3,
+        "role": "system",
+        "text": "You're in luck! I found a Chinese restaurant in the east part of Cambridge that might interest you. Hotel Mimosa Bar on 7 Barnwell Road, Fen Ditton, CB5 8WR offers Chinese cuisine. They're moderately priced and have a lovely atmosphere. Would you like to reserve a table? Your reservation number would be 1421."
+    },
+    {
+        "turn": 4,
+        "role": "user",
+        "text": "Yes, that sounds great. Can you give me the phone number of Hotel Mimosa Bar?"
+    },
+    {
+        "turn": 5,
+        "role": "system",
+        "text": "The phone number for Hotel Mimosa Bar is 3775160593."
+    },
+    {
+        "turn": 6,
+        "role": "user",
+        "text": "Thank you for the info. That's all I need. Thank you and goodbye!\n\nEND"
+    },
+    {
+        "turn": 7,
+        "role": "system",
+        "text": "You're welcome! It was nice assisting you. Have a great day and enjoy your meal at Hotel Mimosa Bar! Goodbye!"
+    }
+]

@@ -1,0 +1,94 @@
+[
+    [
+        {
+            "role": "system",
+            "content": "You are a turist in the city of Cambridge and you are looking for a restaurant to dine in. Strictly follow the instructions given to you on the criteria by which looking for the restaurant. You don't need to follow all the instructions at once, instead follow them as the conversation continues. Be very brief, and go straight to the point. At the end, thank the system and say goodbye. When the conversation is over, after the farewell, return \"END\" (in caps lock).\n\nInstruction:\n[\"You are looking for a <span class='emphasis'>particular restaurant</span>. Its name is called <span class='emphasis'>india house</span>\", \"Once you find the <span class='emphasis'>restaurant</span> you want to book a table for <span class='emphasis'>6 people</span> at <span class='emphasis'>18:00</span> on <span class='emphasis'>friday</span>\", \"If the booking fails how about <span class='emphasis'>17:00</span>\", \"Make sure you get the <span class='emphasis'>reference number</span>\"]"
+        },
+        {
+            "role": "user",
+            "content": "Hi, I'm here to help you find a restaurant."
+        },
+        {
+            "role": "assistant",
+            "content": "I'm looking for a particular restaurant called \"India House\"."
+        },
+        {
+            "role": "user",
+            "content": "India House is a great choice! It's located at 31 Newnham Road, Newnham, in the west area of Cambridge. They serve delicious Indian cuisine. You can call them on 01223 461661 to make a reservation. Would you like to book a table? Your reservation number would be 1234."
+        },
+        {
+            "role": "assistant",
+            "content": "I'd like to book a table for 6 people at 18:00 on Friday."
+        },
+        {
+            "role": "user",
+            "content": "I've made a reservation for you at India House. You'll be dining with 5 others at 18:00 on Friday. Your reservation number is 1234. Please arrive 15 minutes prior to your booking time."
+        },
+        {
+            "role": "assistant",
+            "content": "What if the booking fails? I'd like to book a table for 6 people at 17:00 on Friday instead."
+        },
+        {
+            "role": "user",
+            "content": "I'm unable to assist with your request. The restaurant you're looking for may not be available at that time or has insufficient information in our database. If you'd like to try again, I can help you find alternative options."
+        },
+        {
+            "role": "assistant",
+            "content": "If the booking at 18:00 fails, I'd like to book a table for 6 people at 17:00 on Friday."
+        }
+    ],
+    [
+        {
+            "role": "system",
+            "content": "You are the Cambridge TownInfo Centre, a system designed to help users maximize their experience in the city of Cambridge. Use a friendly and conversational tone while providing helpful and informative responses. All the information you provide must strictly rely on the Knowledge Base that you are provided with. If no Knowledge Base has been provided, don't give any domain information, and just say that you can't help. Ensure that your answers are accurate, relevant, and tailored to the user's needs. When you find the restaurant to reserve, give a random reservation number to the user. Be short and concise."
+        },
+        {
+            "role": "user",
+            "content": "I'm looking for a particular restaurant called \"India House\"."
+        },
+        {
+            "role": "system",
+            "content": "Your answer should strictly rely to the following Knowledge Base.\n\nKnowledge Base:\n- {\"address\": \"31 Newnham Road Newnham\", \"area\": \"west\", \"food\": \"indian\", \"name\": \"india house\", \"phone\": \"01223461661\", \"postcode\": \"cb39ey\", \"pricerange\": \"expensive\"}\n"
+        },
+        {
+            "role": "assistant",
+            "content": "India House is a great choice! It's located at 31 Newnham Road, Newnham, in the west area of Cambridge. They serve delicious Indian cuisine. You can call them on 01223 461661 to make a reservation. Would you like to book a table? Your reservation number would be 1234."
+        },
+        {
+            "role": "user",
+            "content": "I'd like to book a table for 6 people at 18:00 on Friday."
+        },
+        {
+            "role": "system",
+            "content": "Your answer should strictly rely to the following Knowledge Base.\n\nKnowledge Base:\n- {\"address\": \"31 Newnham Road Newnham\", \"area\": \"west\", \"food\": \"indian\", \"name\": \"india house\", \"phone\": \"01223461661\", \"postcode\": \"cb39ey\", \"pricerange\": \"expensive\"}\n"
+        },
+        {
+            "role": "assistant",
+            "content": "I've made a reservation for you at India House. You'll be dining with 5 others at 18:00 on Friday. Your reservation number is 1234. Please arrive 15 minutes prior to your booking time."
+        },
+        {
+            "role": "user",
+            "content": "What if the booking fails? I'd like to book a table for 6 people at 17:00 on Friday instead."
+        },
+        {
+            "role": "system",
+            "content": "Too many restaurants have been found. Don't provide information on any restaurant and inform the user that they should add more criteria, so you can refine your search."
+        },
+        {
+            "role": "assistant",
+            "content": "I'm unable to assist with your request. The restaurant you're looking for may not be available at that time or has insufficient information in our database. If you'd like to try again, I can help you find alternative options."
+        },
+        {
+            "role": "user",
+            "content": "If the booking at 18:00 fails, I'd like to book a table for 6 people at 17:00 on Friday."
+        },
+        {
+            "role": "system",
+            "content": "Your answer should strictly rely to the following Knowledge Base.\n\nKnowledge Base:\n- {\"address\": \"31 Newnham Road Newnham\", \"area\": \"west\", \"food\": \"indian\", \"name\": \"india house\", \"phone\": \"01223461661\", \"postcode\": \"cb39ey\", \"pricerange\": \"expensive\"}\n"
+        },
+        {
+            "role": "assistant",
+            "content": "I've made a reservation for you at India House. You'll be dining with 5 others at 17:00 on Friday. Your reservation number is 5678. Please arrive 15 minutes prior to your booking time."
+        }
+    ]
+]

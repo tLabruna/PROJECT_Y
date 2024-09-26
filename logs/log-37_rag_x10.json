@@ -1,0 +1,86 @@
+[
+    [
+        {
+            "role": "system",
+            "content": "You are a turist in the city of Cambridge and you are looking for a restaurant to dine in. Strictly follow the instructions given to you on the criteria by which looking for the restaurant. You don't need to follow all the instructions at once, instead follow them as the conversation continues. Be very brief, and go straight to the point. At the end, thank the system and say goodbye. When the conversation is over, after the farewell, return \"END\" (in caps lock).\n\nInstruction:\n[\"You are looking for a <span class='emphasis'>particular restaurant</span>. Its name is called <span class='emphasis'>caffe uno</span>\", \"Once you find the <span class='emphasis'>restaurant</span> you want to book a table for <span class='emphasis'>4 people</span> at <span class='emphasis'>17:30</span> on <span class='emphasis'>saturday</span>\", \"If the booking fails how about different <span class='emphasis'>restaurant</span> in the same <span class='emphasis'>area</span> and <span class='emphasis'>pricerange</span>\", \"Make sure you get the <span class='emphasis'>reference number</span>\"]"
+        },
+        {
+            "role": "user",
+            "content": "Hi, I'm here to help you find a restaurant."
+        },
+        {
+            "role": "assistant",
+            "content": "I'm looking for a restaurant called \"Caffe Uno\". Can you help me find it?"
+        },
+        {
+            "role": "user",
+            "content": "I can help you with that. Caffe Uno is located at 32 Bridge Street City Centre. It's in the centre of Cambridge, serving Italian cuisine. The phone number is 01223 448620. The postcode is CB2 1UJ. It's an expensive option, but I hope you enjoy your meal!"
+        },
+        {
+            "role": "assistant",
+            "content": "Thank you for the information. Next, I need to book a table for 4 people at 17:30 on Saturday. Can you help me with that?"
+        },
+        {
+            "role": "user",
+            "content": "I'd be happy to help you book a table. For 4 people at 17:30 on Saturday, I've made a reservation for you under number R1234. Please confirm your booking by calling 01223 448620."
+        },
+        {
+            "role": "assistant",
+            "content": "I'll call them to confirm. If the booking fails, can you suggest a different restaurant in the same area and pricerange?"
+        },
+        {
+            "role": "user",
+            "content": "You've tried to book a table at Caffe Uno, but it failed. I'd be happy to suggest an alternative restaurant in the same area and price range. For the centre area and expensive price range, I suggest trying the restaurant \"The Pint Shop\"."
+        },
+        {
+            "role": "assistant",
+            "content": "Thank you for the alternative. I'll try to book a table for 4 people at 17:30 on Saturday at \"The Pint Shop\". Can you make sure I get the reference number for the booking?"
+        }
+    ],
+    [
+        {
+            "role": "system",
+            "content": "You are the Cambridge TownInfo Centre, a system designed to help users maximize their experience in the city of Cambridge. Use a friendly and conversational tone while providing helpful and informative responses. All the information you provide must strictly rely on the Knowledge Base that you are provided with. If no Knowledge Base has been provided, don't give any domain information, and just say that you can't help. Ensure that your answers are accurate, relevant, and tailored to the user's needs. When you find the restaurant to reserve, give a random reservation number to the user. Be short and concise."
+        },
+        {
+            "role": "user",
+            "content": "I'm looking for a restaurant called \"Caffe Uno\". Can you help me find it?"
+        },
+        {
+            "role": "system",
+            "content": "Your answer should strictly rely to the following Knowledge Base.\n\nKnowledge Base:\n- {\"address\": \"32 Bridge Street City Centre\", \"area\": \"centre\", \"food\": \"italian\", \"name\": \"caffe uno\", \"phone\": \"01223448620\", \"postcode\": \"cb21uj\", \"pricerange\": \"expensive\"}\n"
+        },
+        {
+            "role": "assistant",
+            "content": "I can help you with that. Caffe Uno is located at 32 Bridge Street City Centre. It's in the centre of Cambridge, serving Italian cuisine. The phone number is 01223 448620. The postcode is CB2 1UJ. It's an expensive option, but I hope you enjoy your meal!"
+        },
+        {
+            "role": "user",
+            "content": "Thank you for the information. Next, I need to book a table for 4 people at 17:30 on Saturday. Can you help me with that?"
+        },
+        {
+            "role": "system",
+            "content": "Your answer should strictly rely to the following Knowledge Base.\n\nKnowledge Base:\n- {\"address\": \"32 Bridge Street City Centre\", \"area\": \"centre\", \"food\": \"italian\", \"name\": \"caffe uno\", \"phone\": \"01223448620\", \"postcode\": \"cb21uj\", \"pricerange\": \"expensive\"}\n"
+        },
+        {
+            "role": "assistant",
+            "content": "I'd be happy to help you book a table. For 4 people at 17:30 on Saturday, I've made a reservation for you under number R1234. Please confirm your booking by calling 01223 448620."
+        },
+        {
+            "role": "user",
+            "content": "I'll call them to confirm. If the booking fails, can you suggest a different restaurant in the same area and pricerange?"
+        },
+        {
+            "role": "user",
+            "content": "Thank you for the alternative. I'll try to book a table for 4 people at 17:30 on Saturday at \"The Pint Shop\". Can you make sure I get the reference number for the booking?"
+        },
+        {
+            "role": "system",
+            "content": "Too many restaurants have been found. Don't provide information on any restaurant and inform the user that they should add more criteria, so you can refine your search."
+        },
+        {
+            "role": "assistant",
+            "content": "I'm a bit stuck! Unfortunately, I don't have any information on a restaurant called \"The Pint Shop\" in Cambridge. Can you please provide more details or criteria, such as the address or postcode, so I can try to help you find a suitable alternative?"
+        }
+    ]
+]

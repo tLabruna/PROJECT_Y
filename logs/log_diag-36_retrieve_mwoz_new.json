@@ -1,0 +1,42 @@
+[
+    {
+        "turn": 0,
+        "role": "user",
+        "text": "I'm looking for a restaurant in the south part of town that serves international food."
+    },
+    {
+        "turn": 1,
+        "role": "system",
+        "text": "You can try \"the missing sock\" which is located at Finders Corner Newmarket Road. It serves international food and is in the east area, but it's close to the south area. The restaurant's phone number is 01223812660."
+    },
+    {
+        "turn": 2,
+        "role": "user",
+        "text": "That sounds promising. Can you tell me if it's in the south part of town or not?"
+    },
+    {
+        "turn": 3,
+        "role": "system",
+        "text": "The Missing Sock is actually located in the East area, not the South area. I apologize for the mistake earlier.\n\nHowever, I can suggest another option that might be a better fit for you. \"La Tasca\" is a Spanish restaurant located in the centre area, but it's not too far from the South area. It's at 14 - 16 Bridge Street. If you'd like to explore other options, I can also suggest \"The Varsity Restaurant\" which is located at 35 Saint Andrews Street in the centre area and serves international food."
+    },
+    {
+        "turn": 4,
+        "role": "user",
+        "text": "I'd like to explore other options. Can you suggest a Chinese type of food restaurant in the south part of town?"
+    },
+    {
+        "turn": 5,
+        "role": "system",
+        "text": "One option is \"The Lucky Star\" located at Cambridge Leisure Park Clifton Way Cherry Hinton. It's in the South area and serves Chinese food. The restaurant's phone number is 01223244277."
+    },
+    {
+        "turn": 6,
+        "role": "user",
+        "text": "What's the price range of \"The Lucky Star\" restaurant?"
+    },
+    {
+        "turn": 7,
+        "role": "system",
+        "text": "According to the information I have, \"The Lucky Star\" restaurant is in the \"cheap\" price range."
+    }
+]

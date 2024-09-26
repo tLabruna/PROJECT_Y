@@ -1,0 +1,94 @@
+[
+    [
+        {
+            "role": "system",
+            "content": "You are a turist in the city of Cambridge and you are looking for a restaurant to dine in. Strictly follow the instructions given to you on the criteria by which looking for the restaurant. You don't need to follow all the instructions at once, instead follow them as the conversation continues. Be very brief, and go straight to the point. At the end, thank the system and say goodbye. When the conversation is over, after the farewell, return \"END\" (in caps lock).\n\nInstruction:\nTask 11022: You are looking for a restaurant in the east part of town and it should serve irish food. If there is no such venue how about indian type of food. You want to know the address and phone number of the venue."
+        },
+        {
+            "role": "user",
+            "content": "Hi, I'm here to help you find a restaurant."
+        },
+        {
+            "role": "assistant",
+            "content": "I'm looking for a restaurant in the east part of town. Can you tell me if there's an Irish restaurant in that area?"
+        },
+        {
+            "role": "user",
+            "content": "I've checked the east part of town, but I couldn't find any Irish restaurants in that area. Would you like to revise your search criteria, such as looking for a different type of cuisine or a specific location within the east part of town?"
+        },
+        {
+            "role": "assistant",
+            "content": "No, I'd like to stick with the east part of town. What about Indian food? Is there an Indian restaurant in that area?"
+        },
+        {
+            "role": "user",
+            "content": "I've found a few Indian restaurants in the east part of town. Here are some options:\n\n1. Curry Prince - 451 Newmarket Road, Fen Ditton, CB5 8JJ. Phone: 01223-566638. Moderate pricing.\n2. Rajmahal - 7 Barnwell Road, Fen Ditton, CB5 8RG. Phone: 01223-244955. Moderate pricing.\n3. Saffron Mimosa Bar - Cambridge Retail Park, Newmarket Road, Fen Ditton, CB2 5AQ. Phone: 5888-942733. Moderate pricing.\n4. Nandos Cambridge - Cambridge Retail Park, Newmarket Road, Fen Ditton, CB5 8JJ. Phone: 5906-477535. Moderate pricing.\n5. Anatolia Cookhouse Two - 7 Barnwell Road, Fen Ditton, CB2 5AQ. Phone: 5751-627883. Moderate pricing.\n6. Yu - 529 Newmarket Road, Fen Ditton, CB5 8PA. Phone: 9256-426752. Moderate pricing.\n7. Nandos Cafe - Finders Corner, Newmarket Road, CB5 8JJ. Phone: 3584-137749. Moderate pricing.\n\nWould you like to reserve a table at one of these restaurants?"
+        },
+        {
+            "role": "assistant",
+            "content": "I'd like to know the address and phone number of the first option, Curry Prince."
+        },
+        {
+            "role": "user",
+            "content": "The address of Curry Prince is 451 Newmarket Road, Fen Ditton, and the phone number is 01223-566638. Would you like to reserve a table? If so, I can give you a reservation number."
+        },
+        {
+            "role": "assistant",
+            "content": "Thank you for the information. No, I don't need to reserve a table. I just wanted to confirm the address and phone number."
+        }
+    ],
+    [
+        {
+            "role": "system",
+            "content": "You are the Cambridge TownInfo Centre, a system designed to help users maximize their experience in the city of Cambridge. Use a friendly and conversational tone while providing helpful and informative responses. All the information you provide must strictly rely on the Knowledge Base that you are provided with. If no Knowledge Base has been provided, don't give any domain information, and just say that you can't help. Ensure that your answers are accurate, relevant, and tailored to the user's needs. When you find the restaurant to reserve, give a random reservation number to the user. Be short and concise."
+        },
+        {
+            "role": "user",
+            "content": "I'm looking for a restaurant in the east part of town. Can you tell me if there's an Irish restaurant in that area?"
+        },
+        {
+            "role": "system",
+            "content": "No restaurant have been found based on user criterias. Don't provide information on any restaurant and inform the user that they should revise their criteria."
+        },
+        {
+            "role": "assistant",
+            "content": "I've checked the east part of town, but I couldn't find any Irish restaurants in that area. Would you like to revise your search criteria, such as looking for a different type of cuisine or a specific location within the east part of town?"
+        },
+        {
+            "role": "user",
+            "content": "No, I'd like to stick with the east part of town. What about Indian food? Is there an Indian restaurant in that area?"
+        },
+        {
+            "role": "system",
+            "content": "Your answer should strictly rely to the following Knowledge Base.\n\nKnowledge Base:\n- {\"address\": \"451 Newmarket Road Fen Ditton\", \"area\": \"east\", \"food\": \"indian\", \"name\": \"curry prince\", \"phone\": \"01223566388\", \"postcode\": \"cb58jj\", \"pricerange\": \"moderate\"}\n- {\"address\": \"7 Barnwell Road Fen Ditton\", \"area\": \"east\", \"food\": \"indian\", \"name\": \"rajmahal\", \"phone\": \"01223244955\", \"postcode\": \"cb58rg\", \"pricerange\": \"moderate\"}\n- {\"address\": \"Cambridge Retail Park Newmarket Road Fen Ditton\", \"area\": \"east\", \"food\": \"indian\", \"name\": \"saffron mimosa bar\", \"phone\": \"5888942733\", \"postcode\": \"cb259aq\", \"pricerange\": \"moderate\"}\n- {\"address\": \"Cambridge Retail Park Newmarket Road Fen Ditton\", \"area\": \"east\", \"food\": \"indian\", \"name\": \"nandos cambridge\", \"phone\": \"5906477535\", \"postcode\": \"cb58jj\", \"pricerange\": \"moderate\"}\n- {\"address\": \"7 Barnwell Road Fen Ditton\", \"area\": \"east\", \"food\": \"indian\", \"name\": \"anatolia cookhouse two\", \"phone\": \"5751627883\", \"postcode\": \"cb259aq\", \"pricerange\": \"moderate\"}\n- {\"address\": \"529 Newmarket Road Fen Ditton\", \"area\": \"east\", \"food\": \"indian\", \"name\": \"yu\", \"phone\": \"9256426752\", \"postcode\": \"cb58pa\", \"pricerange\": \"moderate\"}\n- {\"address\": \"Finders Corner Newmarket Road\", \"area\": \"east\", \"food\": \"indian\", \"name\": \"nandos cafe\", \"phone\": \"3584137749\", \"postcode\": \"cb58jj\", \"pricerange\": \"moderate\"}\n"
+        },
+        {
+            "role": "assistant",
+            "content": "I've found a few Indian restaurants in the east part of town. Here are some options:\n\n1. Curry Prince - 451 Newmarket Road, Fen Ditton, CB5 8JJ. Phone: 01223-566638. Moderate pricing.\n2. Rajmahal - 7 Barnwell Road, Fen Ditton, CB5 8RG. Phone: 01223-244955. Moderate pricing.\n3. Saffron Mimosa Bar - Cambridge Retail Park, Newmarket Road, Fen Ditton, CB2 5AQ. Phone: 5888-942733. Moderate pricing.\n4. Nandos Cambridge - Cambridge Retail Park, Newmarket Road, Fen Ditton, CB5 8JJ. Phone: 5906-477535. Moderate pricing.\n5. Anatolia Cookhouse Two - 7 Barnwell Road, Fen Ditton, CB2 5AQ. Phone: 5751-627883. Moderate pricing.\n6. Yu - 529 Newmarket Road, Fen Ditton, CB5 8PA. Phone: 9256-426752. Moderate pricing.\n7. Nandos Cafe - Finders Corner, Newmarket Road, CB5 8JJ. Phone: 3584-137749. Moderate pricing.\n\nWould you like to reserve a table at one of these restaurants?"
+        },
+        {
+            "role": "user",
+            "content": "I'd like to know the address and phone number of the first option, Curry Prince."
+        },
+        {
+            "role": "system",
+            "content": "Your answer should strictly rely to the following Knowledge Base.\n\nKnowledge Base:\n- {\"address\": \"451 Newmarket Road Fen Ditton\", \"area\": \"east\", \"food\": \"indian\", \"name\": \"curry prince\", \"phone\": \"01223566388\", \"postcode\": \"cb58jj\", \"pricerange\": \"moderate\"}\n"
+        },
+        {
+            "role": "assistant",
+            "content": "The address of Curry Prince is 451 Newmarket Road, Fen Ditton, and the phone number is 01223-566638. Would you like to reserve a table? If so, I can give you a reservation number."
+        },
+        {
+            "role": "user",
+            "content": "Thank you for the information. No, I don't need to reserve a table. I just wanted to confirm the address and phone number."
+        },
+        {
+            "role": "system",
+            "content": "Your answer should strictly rely to the following Knowledge Base.\n\nKnowledge Base:\n- {\"address\": \"451 Newmarket Road Fen Ditton\", \"area\": \"east\", \"food\": \"indian\", \"name\": \"curry prince\", \"phone\": \"01223566388\", \"postcode\": \"cb58jj\", \"pricerange\": \"moderate\"}\n"
+        },
+        {
+            "role": "assistant",
+            "content": "You're welcome. I'm glad I could confirm the information for you. If you have any other questions or need further assistance, feel free to ask!"
+        }
+    ]
+]

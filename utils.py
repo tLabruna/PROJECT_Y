@@ -3,9 +3,11 @@ import json, re
 def load_json(file_path):
     with open(file_path, 'r') as file:
         return json.load(file)
-
-import re
-import json
+    
+def write_json(json_obj, file_path):
+    with open(file_path, "w") as f:
+        json.dump(json_obj, f, indent=4)
+    print(f"File {file_path} correctly saved.")
 
 def parse_input_string(input_str, role):
     # Use a regex to extract all JSON parts, allowing for newlines and spaces

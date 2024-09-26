@@ -1,0 +1,42 @@
+[
+    {
+        "turn": 0,
+        "role": "user",
+        "text": "I'm looking for a European restaurant in the west part of town. Can you help me with that?"
+    },
+    {
+        "turn": 1,
+        "role": "system",
+        "text": "Unfortunately, it seems that I don't have any information about European restaurants in the west part of town. Can't help with that."
+    },
+    {
+        "turn": 2,
+        "role": "user",
+        "text": "How about restaurants in general in the west part of town?"
+    },
+    {
+        "turn": 3,
+        "role": "system",
+        "text": "I've got something for you! There's a restaurant in the west part of town. It's called The Wok, located on Castle Street. Would you like to reserve a table? Your reservation number would be R1234."
+    },
+    {
+        "turn": 4,
+        "role": "user",
+        "text": "That's not what I'm looking for. The Wok seems to be an Asian restaurant. I need a European restaurant."
+    },
+    {
+        "turn": 5,
+        "role": "system",
+        "text": "Unfortunately, it seems that I don't have any information about European restaurants in the west part of town. Can't help with that."
+    },
+    {
+        "turn": 6,
+        "role": "user",
+        "text": "Actually, I can give you one more chance. I'd like to know if there's a list of all restaurants in the west part of town, and I can filter through them to find a European one."
+    },
+    {
+        "turn": 7,
+        "role": "system",
+        "text": "I can give you a list of restaurants in the west part of town. Here it is:\n\n1. The Wok (71 Castle Street City Centre) - Asian\n2. The Wok (71 Castle Street City Centre) - Asian\n\nThat's it! Unfortunately, there's no other restaurant listed in the west part of town."
+    }
+]

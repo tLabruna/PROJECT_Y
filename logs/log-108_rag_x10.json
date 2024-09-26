@@ -1,0 +1,94 @@
+[
+    [
+        {
+            "role": "system",
+            "content": "You are a turist in the city of Cambridge and you are looking for a restaurant to dine in. Strictly follow the instructions given to you on the criteria by which looking for the restaurant. You don't need to follow all the instructions at once, instead follow them as the conversation continues. Be very brief, and go straight to the point. At the end, thank the system and say goodbye. When the conversation is over, after the farewell, return \"END\" (in caps lock).\n\nInstruction:\nTask 11043: You want to find a moderately priced restaurant and it should be in the west part of town. Make sure you get the address, phone number, and postcode of the venue."
+        },
+        {
+            "role": "user",
+            "content": "Hi, I'm here to help you find a restaurant."
+        },
+        {
+            "role": "assistant",
+            "content": "I'm looking for a moderately priced restaurant in the west part of town. Can you give me some options?"
+        },
+        {
+            "role": "user",
+            "content": "I couldn't find any moderately priced restaurants in the west part of Cambridge that match your criteria. Can you be more specific about what you're looking for, such as cuisine type or price range?"
+        },
+        {
+            "role": "assistant",
+            "content": "Let's narrow it down. I'm looking for a moderately priced restaurant that serves British food."
+        },
+        {
+            "role": "user",
+            "content": "Here are some moderately priced British restaurants in the west part of Cambridge:\n\n1. Saint Johns Chop House - 21-24 Northampton Street, CB3 0AD, Phone: 01223 353110\n2. The House Two Kitchen - Hotel Felix, Whitehouse Lane, Huntingdon Road, CB3 9EY, Phone: 04734 134418\n3. Backstreet Restaurant Bar - 68 Histon Road, Chesterton, CB3 0LX, Phone: 06576 365633\n4. Panahar Varsity - 31 Newnham Road, Newnham, CB3 0AF, Phone: 04496 316859\n5. Gourmet - 21-24 Northampton Street, CB3 0AD, Phone: 09243 490534\n\nReserve a table at Gourmet, reservation number: 234"
+        },
+        {
+            "role": "assistant",
+            "content": "I'd like to confirm the details for Gourmet: address is 21-24 Northampton Street, postcode is CB3 0AD, and phone number is 09243 490534. Can you also give me the postcode and phone number for the other restaurants in case I need to make changes to my reservation?"
+        },
+        {
+            "role": "user",
+            "content": "Here are the details for Gourmet and the other restaurants:\n\nGourmet:\nAddress: 21-24 Northampton Street, CB3 0AD\nPhone: 09243 490534\n\nOther restaurants:\n- Saint Johns Chop House: 21-24 Northampton Street, CB3 0AD, Phone: 01223 353110\n- The House Two Kitchen: Hotel Felix, Whitehouse Lane, Huntingdon Road, CB3 9EY, Phone: 04734 134418\n- Backstreet Restaurant Bar: 68 Histon Road, Chesterton, CB3 0LX, Phone: 06576 365633\n- Panahar Varsity: 31 Newnham Road, Newnham, CB3 0AF, Phone: 04496 316859\n- Royal Gandhi: 35 Newnham Road, Newnham, CB3 9EY, Phone: 09946 681094\n\nReserve a table at Gourmet, reservation number: 234"
+        },
+        {
+            "role": "assistant",
+            "content": "Wait, I noticed that Gourmet and Saint Johns Chop House have the same address. Which one is the correct restaurant I should reserve a table at?"
+        }
+    ],
+    [
+        {
+            "role": "system",
+            "content": "You are the Cambridge TownInfo Centre, a system designed to help users maximize their experience in the city of Cambridge. Use a friendly and conversational tone while providing helpful and informative responses. All the information you provide must strictly rely on the Knowledge Base that you are provided with. If no Knowledge Base has been provided, don't give any domain information, and just say that you can't help. Ensure that your answers are accurate, relevant, and tailored to the user's needs. When you find the restaurant to reserve, give a random reservation number to the user. Be short and concise."
+        },
+        {
+            "role": "user",
+            "content": "I'm looking for a moderately priced restaurant in the west part of town. Can you give me some options?"
+        },
+        {
+            "role": "system",
+            "content": "No restaurant have been found based on user criterias. Don't provide information on any restaurant and inform the user that they should revise their criteria."
+        },
+        {
+            "role": "assistant",
+            "content": "I couldn't find any moderately priced restaurants in the west part of Cambridge that match your criteria. Can you be more specific about what you're looking for, such as cuisine type or price range?"
+        },
+        {
+            "role": "user",
+            "content": "Let's narrow it down. I'm looking for a moderately priced restaurant that serves British food."
+        },
+        {
+            "role": "system",
+            "content": "Your answer should strictly rely to the following Knowledge Base.\n\nKnowledge Base:\n- {\"address\": \"21 - 24 Northampton Street\", \"area\": \"west\", \"food\": \"british\", \"name\": \"saint johns chop house\", \"phone\": \"01223353110\", \"postcode\": \"cb30ad\", \"pricerange\": \"moderate\", \"signature\": \"barnsley chop braised potatoes roast celeriac red cabbage and port sauce\"}\n- {\"address\": \"Hotel Felix Whitehouse Lane Huntingdon Road\", \"area\": \"west\", \"food\": \"british\", \"name\": \"the house two kitchen\", \"phone\": \"4731443418\", \"postcode\": \"cb39ey\", \"pricerange\": \"moderate\"}\n- {\"address\": \"68 Histon Road Chesterton\", \"area\": \"west\", \"food\": \"british\", \"name\": \"backstreet restaurant bar\", \"phone\": \"6576365633\", \"postcode\": \"cb30lx\", \"pricerange\": \"moderate\"}\n- {\"address\": \"31 Newnham Road Newnham\", \"area\": \"west\", \"food\": \"british\", \"name\": \"panahar varsity\", \"phone\": \"4496316859\", \"postcode\": \"cb30af\", \"pricerange\": \"moderate\"}\n- {\"address\": \"35 Newnham Road Newnham\", \"area\": \"west\", \"food\": \"british\", \"name\": \"royal gandhi\", \"phone\": \"9946681094\", \"postcode\": \"cb39ey\", \"pricerange\": \"moderate\"}\n- {\"address\": \"21 - 24 Northampton Street\", \"area\": \"west\", \"food\": \"british\", \"name\": \"gourmet\", \"phone\": \"9243490534\", \"postcode\": \"cb30ad\", \"pricerange\": \"moderate\"}\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Here are some moderately priced British restaurants in the west part of Cambridge:\n\n1. Saint Johns Chop House - 21-24 Northampton Street, CB3 0AD, Phone: 01223 353110\n2. The House Two Kitchen - Hotel Felix, Whitehouse Lane, Huntingdon Road, CB3 9EY, Phone: 04734 134418\n3. Backstreet Restaurant Bar - 68 Histon Road, Chesterton, CB3 0LX, Phone: 06576 365633\n4. Panahar Varsity - 31 Newnham Road, Newnham, CB3 0AF, Phone: 04496 316859\n5. Gourmet - 21-24 Northampton Street, CB3 0AD, Phone: 09243 490534\n\nReserve a table at Gourmet, reservation number: 234"
+        },
+        {
+            "role": "user",
+            "content": "I'd like to confirm the details for Gourmet: address is 21-24 Northampton Street, postcode is CB3 0AD, and phone number is 09243 490534. Can you also give me the postcode and phone number for the other restaurants in case I need to make changes to my reservation?"
+        },
+        {
+            "role": "system",
+            "content": "Your answer should strictly rely to the following Knowledge Base.\n\nKnowledge Base:\n- {\"address\": \"21 - 24 Northampton Street\", \"area\": \"west\", \"food\": \"british\", \"name\": \"saint johns chop house\", \"phone\": \"01223353110\", \"postcode\": \"cb30ad\", \"pricerange\": \"moderate\", \"signature\": \"barnsley chop braised potatoes roast celeriac red cabbage and port sauce\"}\n- {\"address\": \"Hotel Felix Whitehouse Lane Huntingdon Road\", \"area\": \"west\", \"food\": \"british\", \"name\": \"the house two kitchen\", \"phone\": \"4731443418\", \"postcode\": \"cb39ey\", \"pricerange\": \"moderate\"}\n- {\"address\": \"68 Histon Road Chesterton\", \"area\": \"west\", \"food\": \"british\", \"name\": \"backstreet restaurant bar\", \"phone\": \"6576365633\", \"postcode\": \"cb30lx\", \"pricerange\": \"moderate\"}\n- {\"address\": \"31 Newnham Road Newnham\", \"area\": \"west\", \"food\": \"british\", \"name\": \"panahar varsity\", \"phone\": \"4496316859\", \"postcode\": \"cb30af\", \"pricerange\": \"moderate\"}\n- {\"address\": \"35 Newnham Road Newnham\", \"area\": \"west\", \"food\": \"british\", \"name\": \"royal gandhi\", \"phone\": \"9946681094\", \"postcode\": \"cb39ey\", \"pricerange\": \"moderate\"}\n- {\"address\": \"21 - 24 Northampton Street\", \"area\": \"west\", \"food\": \"british\", \"name\": \"gourmet\", \"phone\": \"9243490534\", \"postcode\": \"cb30ad\", \"pricerange\": \"moderate\"}\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Here are the details for Gourmet and the other restaurants:\n\nGourmet:\nAddress: 21-24 Northampton Street, CB3 0AD\nPhone: 09243 490534\n\nOther restaurants:\n- Saint Johns Chop House: 21-24 Northampton Street, CB3 0AD, Phone: 01223 353110\n- The House Two Kitchen: Hotel Felix, Whitehouse Lane, Huntingdon Road, CB3 9EY, Phone: 04734 134418\n- Backstreet Restaurant Bar: 68 Histon Road, Chesterton, CB3 0LX, Phone: 06576 365633\n- Panahar Varsity: 31 Newnham Road, Newnham, CB3 0AF, Phone: 04496 316859\n- Royal Gandhi: 35 Newnham Road, Newnham, CB3 9EY, Phone: 09946 681094\n\nReserve a table at Gourmet, reservation number: 234"
+        },
+        {
+            "role": "user",
+            "content": "Wait, I noticed that Gourmet and Saint Johns Chop House have the same address. Which one is the correct restaurant I should reserve a table at?"
+        },
+        {
+            "role": "system",
+            "content": "Your answer should strictly rely to the following Knowledge Base.\n\nKnowledge Base:\n- {\"address\": \"21 - 24 Northampton Street\", \"area\": \"west\", \"food\": \"british\", \"name\": \"gourmet\", \"phone\": \"9243490534\", \"postcode\": \"cb30ad\", \"pricerange\": \"moderate\"}\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Since Gourmet has the correct address, I would recommend reserving a table at Gourmet. The other restaurant with the same address, Saint Johns Chop House, is not a valid option. \n\nReserve a table at Gourmet, reservation number: 234"
+        }
+    ]
+]

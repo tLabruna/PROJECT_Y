@@ -1,0 +1,42 @@
+[
+    {
+        "turn": 0,
+        "role": "user",
+        "text": "I'm looking for a cheap restaurant that serves Malaysian food. Do you know any places in Cambridge that fit that criteria?"
+    },
+    {
+        "turn": 1,
+        "role": "system",
+        "text": "Sorry, I can't help with that."
+    },
+    {
+        "turn": 2,
+        "role": "user",
+        "text": "How about European type of food then?"
+    },
+    {
+        "turn": 3,
+        "role": "system",
+        "text": "I've found a few options. However, I'd be happy to narrow down the search if you could provide more criteria, such as a specific type of European cuisine (e.g. Italian, French, etc.) or a particular area of Cambridge."
+    },
+    {
+        "turn": 4,
+        "role": "user",
+        "text": "Let's say Italian food, and preferably in the city centre."
+    },
+    {
+        "turn": 5,
+        "role": "system",
+        "text": "I've found a few Italian restaurants in the city centre, but it would be helpful if you could add more criteria, such as price range or specific location (e.g. near a particular landmark). This will help me provide a more tailored suggestion."
+    },
+    {
+        "turn": 6,
+        "role": "user",
+        "text": "How about a budget of \u00a315-20 per meal and near the River Cam?"
+    },
+    {
+        "turn": 7,
+        "role": "system",
+        "text": "I've found a few Italian restaurants in the city centre near the River Cam that might fit your budget. However, I'd recommend trying \"de tasca\" on Saint Andrews Street. It's a budget-friendly option with Mexican food, but they also have a cozy outdoor seating area with a view of the River Cam."
+    }
+]

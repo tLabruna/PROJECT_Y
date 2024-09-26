@@ -1,0 +1,42 @@
+[
+    {
+        "turn": 0,
+        "role": "user",
+        "text": "I'm looking for a restaurant in the north part of town. What are my options for British food?"
+    },
+    {
+        "turn": 1,
+        "role": "system",
+        "text": "You can consider the following options for British food in the north part of town:\n\n* Cambridge Lodge Hotel 139 Huntingdon Road City Centre, which serves European cuisine but also has a British menu option.\n* Hotel Felix Whitehouse Lane Huntingdon Road, which serves British cuisine and has a signature dish of panfried fillet of brill tempura of langoustine crushed garden peas shellfish basil nage.\n* Grafton Hotel 619 Newmarket Road Fen Ditton, which serves British cuisine and has a signature dish of lobster mac and cheese.\n* Cambridge City Football Club Milton Road Chesterton, which serves European cuisine but also has a British menu option.\n* 169 High Street Chesterton Chesterton, which serves Asian oriental cuisine but also has a British menu option.\n* 66 Chesterton Road Chesterton, which serves Chinese cuisine but also has a British menu option.\n\nPlease note that the options are based on the information provided in the Knowledge Base. It's always a good idea to check the current menu and availability before visiting a restaurant."
+    },
+    {
+        "turn": 2,
+        "role": "user",
+        "text": "I'd like to consider Hotel Felix, it serves British cuisine. What's the address and phone number?"
+    },
+    {
+        "turn": 3,
+        "role": "system",
+        "text": "Hotel Felix is a great option. The address and phone number for Hotel Felix is:\n\nHotel Felix\nWhitehouse Lane\nHuntingdon Road\nCambridge\nCB30LX\n\nPhone: 01223 777977\n\nI hope you have a great dining experience there!"
+    },
+    {
+        "turn": 4,
+        "role": "user",
+        "text": "What's the price range for a meal at Hotel Felix?"
+    },
+    {
+        "turn": 5,
+        "role": "system",
+        "text": "According to the Knowledge Base, Hotel Felix is an \"expensive\" option, which means that the price range for a meal there is likely to be on the higher end."
+    },
+    {
+        "turn": 6,
+        "role": "user",
+        "text": "I'd like to consider an alternative option, in case Hotel Felix is too expensive. You mentioned earlier that if there's no British food available, I could consider Indian-type food. Do you have any options for Indian-type food in the north part of town?"
+    },
+    {
+        "turn": 7,
+        "role": "system",
+        "text": "In that case, you might want to consider the following Indian-type food options in the north part of town:\n\n* 169 High Street Chesterton Chesterton, which serves Asian oriental cuisine, including Indian-type dishes.\n* 66 Chesterton Road Chesterton, which serves Chinese cuisine, but also has some Indian-type dishes.\n* 43 High Street Cherry Hinton Cherry Hinton, which serves Indian cuisine.\n* 7 Barnwell Road Fen Ditton, which serves Indian cuisine.\n\nPlease note that these options may not be traditional British cuisine, but they do offer Indian-type food options."
+    }
+]

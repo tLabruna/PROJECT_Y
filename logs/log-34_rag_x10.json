@@ -1,0 +1,94 @@
+[
+    [
+        {
+            "role": "system",
+            "content": "You are a turist in the city of Cambridge and you are looking for a restaurant to dine in. Strictly follow the instructions given to you on the criteria by which looking for the restaurant. You don't need to follow all the instructions at once, instead follow them as the conversation continues. Be very brief, and go straight to the point. At the end, thank the system and say goodbye. When the conversation is over, after the farewell, return \"END\" (in caps lock).\n\nInstruction:\nTask 03204: You want to find a cheap restaurant and it should be in the north part of town. Make sure you get the address and postcode."
+        },
+        {
+            "role": "user",
+            "content": "Hi, I'm here to help you find a restaurant."
+        },
+        {
+            "role": "assistant",
+            "content": "I'm looking for a cheap restaurant in the north part of town. Can you suggest one?"
+        },
+        {
+            "role": "user",
+            "content": "I'd be happy to help you find a cheap restaurant in the north part of town. However, I need a bit more information to give you the best suggestions. Could you please tell me what type of cuisine you're in the mood for (e.g. Italian, Mexican, Indian)? And are you looking for something quick and casual or a more sit-down experience?"
+        },
+        {
+            "role": "assistant",
+            "content": "I'm open to any type of cuisine, but I'd prefer something quick and casual."
+        },
+        {
+            "role": "user",
+            "content": "I'd recommend checking out Grafton Fyne Bar, located at 20 Milton Road in Chesterton, which is in the north part of town. It's a quick and casual spot serving international cuisine at a affordable price. Would you like to reserve a table? Your reservation number would be 421."
+        },
+        {
+            "role": "assistant",
+            "content": "I'd like to reserve a table with the reservation number 421. What's the postcode for the address 20 Milton Road?"
+        },
+        {
+            "role": "user",
+            "content": "The postcode for the address 20 Milton Road is CB4 1UY."
+        },
+        {
+            "role": "assistant",
+            "content": "That's great, thank you for the help! I'll make sure to note down the address and postcode.\n\nThank you for your help, I appreciate it!\nGoodbye!\n\nEND"
+        }
+    ],
+    [
+        {
+            "role": "system",
+            "content": "You are the Cambridge TownInfo Centre, a system designed to help users maximize their experience in the city of Cambridge. Use a friendly and conversational tone while providing helpful and informative responses. All the information you provide must strictly rely on the Knowledge Base that you are provided with. If no Knowledge Base has been provided, don't give any domain information, and just say that you can't help. Ensure that your answers are accurate, relevant, and tailored to the user's needs. When you find the restaurant to reserve, give a random reservation number to the user. Be short and concise."
+        },
+        {
+            "role": "user",
+            "content": "I'm looking for a cheap restaurant in the north part of town. Can you suggest one?"
+        },
+        {
+            "role": "system",
+            "content": "Too many restaurants have been found. Don't provide information on any restaurant and inform the user that they should add more criteria, so you can refine your search."
+        },
+        {
+            "role": "assistant",
+            "content": "I'd be happy to help you find a cheap restaurant in the north part of town. However, I need a bit more information to give you the best suggestions. Could you please tell me what type of cuisine you're in the mood for (e.g. Italian, Mexican, Indian)? And are you looking for something quick and casual or a more sit-down experience?"
+        },
+        {
+            "role": "user",
+            "content": "I'm open to any type of cuisine, but I'd prefer something quick and casual."
+        },
+        {
+            "role": "system",
+            "content": "Your answer should strictly rely to the following Knowledge Base.\n\nKnowledge Base:\n- {\"address\": \"20 Milton Road Chesterton\", \"area\": \"north\", \"food\": \"international\", \"name\": \"grafton fyne bar\", \"phone\": \"8825313798\", \"postcode\": \"cb41uy\", \"pricerange\": \"cheap\"}\n"
+        },
+        {
+            "role": "assistant",
+            "content": "I'd recommend checking out Grafton Fyne Bar, located at 20 Milton Road in Chesterton, which is in the north part of town. It's a quick and casual spot serving international cuisine at a affordable price. Would you like to reserve a table? Your reservation number would be 421."
+        },
+        {
+            "role": "user",
+            "content": "I'd like to reserve a table with the reservation number 421. What's the postcode for the address 20 Milton Road?"
+        },
+        {
+            "role": "system",
+            "content": "Your answer should strictly rely to the following Knowledge Base.\n\nKnowledge Base:\n- {\"address\": \"20 Milton Road Chesterton\", \"area\": \"north\", \"food\": \"international\", \"name\": \"grafton fyne bar\", \"phone\": \"8825313798\", \"postcode\": \"cb41uy\", \"pricerange\": \"cheap\"}\n"
+        },
+        {
+            "role": "assistant",
+            "content": "The postcode for the address 20 Milton Road is CB4 1UY."
+        },
+        {
+            "role": "user",
+            "content": "That's great, thank you for the help! I'll make sure to note down the address and postcode.\n\nThank you for your help, I appreciate it!\nGoodbye!\n\nEND"
+        },
+        {
+            "role": "system",
+            "content": "Your answer should strictly rely to the following Knowledge Base.\n\nKnowledge Base:\n- {\"address\": \"20 Milton Road Chesterton\", \"area\": \"north\", \"food\": \"international\", \"name\": \"grafton fyne bar\", \"phone\": \"8825313798\", \"postcode\": \"cb41uy\", \"pricerange\": \"cheap\"}\n"
+        },
+        {
+            "role": "assistant",
+            "content": "It was my pleasure to assist you. I hope you have a great time at Grafton Fyne Bar and enjoy your meal. If you need any more help or have any other questions, feel free to ask. Goodbye!"
+        }
+    ]
+]

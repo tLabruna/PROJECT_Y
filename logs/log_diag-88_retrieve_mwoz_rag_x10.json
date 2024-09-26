@@ -1,0 +1,42 @@
+[
+    {
+        "turn": 0,
+        "role": "user",
+        "text": "I'm looking for a restaurant in the centre of Cambridge."
+    },
+    {
+        "turn": 1,
+        "role": "system",
+        "text": "We've got a lot of great options in the city centre. To help narrow it down, could you tell me what type of cuisine you're in the mood for? Is it Italian, Indian, or something else?"
+    },
+    {
+        "turn": 2,
+        "role": "user",
+        "text": "I'm in the mood for Mexican food."
+    },
+    {
+        "turn": 3,
+        "role": "system",
+        "text": "It seems we couldn't find any Mexican restaurants in the city centre. Could you try revising your search criteria? Perhaps you'd like to try a different type of cuisine or location?"
+    },
+    {
+        "turn": 4,
+        "role": "user",
+        "text": "How about Indian food then?"
+    },
+    {
+        "turn": 5,
+        "role": "system",
+        "text": "We've got a lot of great Indian restaurants in the city centre. To help narrow it down, could you tell me if you're looking for a specific type of Indian cuisine, like Punjabi or South Indian? Or perhaps you'd like to know if the restaurant is vegetarian-friendly or has a particular ambiance?"
+    },
+    {
+        "turn": 6,
+        "role": "user",
+        "text": "No, just a regular Indian restaurant will do. I'd like to book a table for 7 people."
+    },
+    {
+        "turn": 7,
+        "role": "system",
+        "text": "It seems we've got a lot of Indian restaurants to choose from. To help narrow it down, could you tell me if you'd like to book a table at a restaurant that's particularly close to a specific landmark, like the River Cam or King's College?"
+    }
+]

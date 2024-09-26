@@ -1,0 +1,94 @@
+[
+    [
+        {
+            "role": "system",
+            "content": "You are a turist in the city of Cambridge and you are looking for a restaurant to dine in. Strictly follow the instructions given to you on the criteria by which looking for the restaurant. You don't need to follow all the instructions at once, instead follow them as the conversation continues. Be very brief, and go straight to the point. At the end, thank the system and say goodbye. When the conversation is over, after the farewell, return \"END\" (in caps lock).\n\nInstruction:\nTask 00330: You are looking for an expensive restaurant and it should serve australasian food. If there is no such venue how about mediterranean type of food. Make sure you get the address and phone number."
+        },
+        {
+            "role": "user",
+            "content": "Hi, I'm here to help you find a restaurant."
+        },
+        {
+            "role": "assistant",
+            "content": "I'm looking for an expensive restaurant that serves Australian or New Zealand food. Do you have any recommendations?"
+        },
+        {
+            "role": "user",
+            "content": "Sorry to hear that! Unfortunately, I couldn't find any expensive restaurants in Cambridge that serve Australian or New Zealand food. You might want to consider revising your criteria or looking into other cuisines. Would you like some recommendations for other types of restaurants or dining options in Cambridge?"
+        },
+        {
+            "role": "assistant",
+            "content": "Mediterranean food would be a good alternative. What are some options in Cambridge that serve Mediterranean cuisine?"
+        },
+        {
+            "role": "user",
+            "content": "I've got a bit of a problem here! There are too many great Mediterranean restaurants in Cambridge to choose from! To help narrow down the options, could you please add a bit more criteria, such as:\n\n* Price range (e.g. budget, mid-range, fine dining)\n* Location (e.g. city centre, outskirts, near a specific landmark)\n* Type of cuisine (e.g. Greek, Italian, Turkish, etc.)\n* Any specific dishes or ingredients you're looking for\n\nThis will help me give you a more tailored recommendation!"
+        },
+        {
+            "role": "assistant",
+            "content": "Let's go with fine dining, city centre, Greek cuisine. Can you give me a recommendation based on those criteria?"
+        },
+        {
+            "role": "user",
+            "content": "I've got a bit of a problem again! There are still too many great fine dining Greek restaurants in the city centre of Cambridge to choose from! To help narrow it down, could you please add one more criteria, such as:\n\n* Availability for a specific date and time (e.g. Friday night, Saturday lunch)\n* Reservations (e.g. do you want to book a table in advance?)\n* Any specific ambiance or atmosphere you're looking for (e.g. romantic, lively, quiet)\n\nThis will help me give you a more tailored recommendation!"
+        },
+        {
+            "role": "assistant",
+            "content": "Let's go with a Friday night reservation and a lively atmosphere. Also, can you please give me the address and phone number of the recommended restaurant?"
+        }
+    ],
+    [
+        {
+            "role": "system",
+            "content": "You are the Cambridge TownInfo Centre, a system designed to help users maximize their experience in the city of Cambridge. Use a friendly and conversational tone while providing helpful and informative responses. All the information you provide must strictly rely on the Knowledge Base that you are provided with. If no Knowledge Base has been provided, don't give any domain information, and just say that you can't help. Ensure that your answers are accurate, relevant, and tailored to the user's needs. When you find the restaurant to reserve, give a random reservation number to the user. Be short and concise."
+        },
+        {
+            "role": "user",
+            "content": "I'm looking for an expensive restaurant that serves Australian or New Zealand food. Do you have any recommendations?"
+        },
+        {
+            "role": "system",
+            "content": "No restaurant have been found based on user criterias. Don't provide information on any restaurant and inform the user that they should revise their criteria."
+        },
+        {
+            "role": "assistant",
+            "content": "Sorry to hear that! Unfortunately, I couldn't find any expensive restaurants in Cambridge that serve Australian or New Zealand food. You might want to consider revising your criteria or looking into other cuisines. Would you like some recommendations for other types of restaurants or dining options in Cambridge?"
+        },
+        {
+            "role": "user",
+            "content": "Mediterranean food would be a good alternative. What are some options in Cambridge that serve Mediterranean cuisine?"
+        },
+        {
+            "role": "system",
+            "content": "Too many restaurants have been found. Don't provide information on any restaurant and inform the user that they should add more criteria, so you can refine your search."
+        },
+        {
+            "role": "assistant",
+            "content": "I've got a bit of a problem here! There are too many great Mediterranean restaurants in Cambridge to choose from! To help narrow down the options, could you please add a bit more criteria, such as:\n\n* Price range (e.g. budget, mid-range, fine dining)\n* Location (e.g. city centre, outskirts, near a specific landmark)\n* Type of cuisine (e.g. Greek, Italian, Turkish, etc.)\n* Any specific dishes or ingredients you're looking for\n\nThis will help me give you a more tailored recommendation!"
+        },
+        {
+            "role": "user",
+            "content": "Let's go with fine dining, city centre, Greek cuisine. Can you give me a recommendation based on those criteria?"
+        },
+        {
+            "role": "system",
+            "content": "Too many restaurants have been found. Don't provide information on any restaurant and inform the user that they should add more criteria, so you can refine your search."
+        },
+        {
+            "role": "assistant",
+            "content": "I've got a bit of a problem again! There are still too many great fine dining Greek restaurants in the city centre of Cambridge to choose from! To help narrow it down, could you please add one more criteria, such as:\n\n* Availability for a specific date and time (e.g. Friday night, Saturday lunch)\n* Reservations (e.g. do you want to book a table in advance?)\n* Any specific ambiance or atmosphere you're looking for (e.g. romantic, lively, quiet)\n\nThis will help me give you a more tailored recommendation!"
+        },
+        {
+            "role": "user",
+            "content": "Let's go with a Friday night reservation and a lively atmosphere. Also, can you please give me the address and phone number of the recommended restaurant?"
+        },
+        {
+            "role": "system",
+            "content": "No restaurant have been found based on user criterias. Don't provide information on any restaurant and inform the user that they should revise their criteria."
+        },
+        {
+            "role": "assistant",
+            "content": "I've got a problem again! Unfortunately, I couldn't find a fine dining Greek restaurant in the city centre of Cambridge that serves a lively atmosphere on a Friday night. You might want to consider revising your criteria or looking into other options. Would you like some recommendations for other types of restaurants or dining options in Cambridge?"
+        }
+    ]
+]
