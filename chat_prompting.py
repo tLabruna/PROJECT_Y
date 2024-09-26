@@ -19,7 +19,7 @@ class ChatGenerator:
     and data loading modalities.
     """
     
-    def __init__(self, model="llama", dep_id="", ckpt_dir="/data01/PROJECT_X/llama3/Meta-Llama-3.1-8B-Instruct", tokenizer_path="/data01/PROJECT_X/llama3/Meta-Llama-3.1-8B-Instruct/tokenizer.model", max_seq_len=8192, max_batch_size=6):
+    def __init__(self, model="llama", dep_id="", ckpt_dir="/leonardo_scratch/fast/IscrC_PolyVLM/.llama/checkpoints/Meta-Llama3.1-8B-Instruct", tokenizer_path="/leonardo_scratch/fast/IscrC_PolyVLM/.llama/checkpoints/Meta-Llama3.1-8B-Instruct/tokenizer.model", max_seq_len=8192, max_batch_size=6):
         """
         When initialized, the object creates an empty list of dialogues
         and sets the Llama generator.
