@@ -1,7 +1,7 @@
 from chat_prompting import ChatGenerator
 from templates import TEMPLATES, USER_INSTRUCTIONS
 from build_prompt import kb_to_prompt, instructions_to_prompt
-import json
+import json, os
 from utils import load_json
 
 USE_ALL_KB = True
@@ -33,32 +33,40 @@ if USE_MWOZ_INSTRUCTIONS:
 else:
     user_prompts = instructions_to_prompt(user_prompt, USER_INSTRUCTIONS)
 
+all_dialogues = {}
+all_logs = {}
+
 for i in range(len(user_prompts)):
     # if i == 50: break
     # log_path = f"log_diag-{i}_retrieve_mwoz_new"
     # try: load_json(f"{log_path}.json")
     # except: continue
     user_prompt_i = user_prompts[i-1]
-    try:
-        print(f"Dialogue #{i} starting...\n")
-        
-        llama_gen.add_system_prompt(user_prompt_i, 0)
-        llama_gen.add_to_context("Hi, I'm here to help you find a restaurant.", "user", 0)
-        llama_gen.add_system_prompt(system_prompt, 1)
-        log = llama_gen.start_llama_to_llama_mode(0,1,7, retrieve=RETRIEVE, verbose=VERBOSE)
+    # try:
+    print(f"Dialogue #{i} starting...\n")
+    
+    llama_gen.add_system_prompt(user_prompt_i, 0)
+    llama_gen.add_to_context("Hi, I'm here to help you find a restaurant.", "user", 0)
+    llama_gen.add_system_prompt(system_prompt, 1)
+    log = llama_gen.start_llama_to_llama_mode(0,1,7, retrieve=RETRIEVE, verbose=VERBOSE)
 
-        with open(f"logs/log-{i}_all_x2.json", "w") as f:
-            json.dump(llama_gen.dialogues, f, indent=4)
+    all_dialogues[i] = llama_gen.dialogues
+    all_logs[i] = log
 
-        file_name = f"logs/log_diag-{i}_retrieve_mwoz_all_x2.json"
-
-        with open(file_name, "w") as f:
-            json.dump(log, f, indent=4)
-
-        print(f"File named {file_name} correctely saved.")
-        print("------------------------------")
-    except:
-        llama_gen.reset_dialogues()
-        continue
+    # except:
+        # llama_gen.reset_dialogues()
+        # continue
     llama_gen.reset_dialogues()
+
+with open(f"logs/log-all_x2.json", "w") as f:
+    json.dump(all_dialogues, f, indent=4)
+
+file_name = "logs/log_diag-all_x2.json"
+
+with open(file_name, "w") as f:
+    json.dump(log, f, indent=4)
+
+print(f"File named {file_name} correctely saved.")
+print("------------------------------")
+
     # exit()
