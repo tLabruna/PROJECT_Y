@@ -87,24 +87,26 @@ class ChatGenerator:
         if self.model == "llama":
             old_len = 0
             c = 0
-            while 1:
-                if c >= 10:
-                    print("Error: Can't reduce prompt length")
-                    break
-                # print("Trying prompt length...")
-                prompt_tokens = self.generator.formatter.encode_dialog_prompt(prompt)
-                # prompt_tokens = self.generator.module.formatter.encode_dialog_prompt(prompt)
-                if len(prompt_tokens) == old_len:
-                    Exception("Prompt length problem.")
-                old_len = len(prompt_tokens)
-                if len(prompt_tokens) > self.max_seq_len:
-                    c += 1
-                    is_dialog_full = self.remove_from_context(i)
-                    if not is_dialog_full:
-                        raise Exception("Prompt message is too long.")
-                else:
-                    break
-        
+            if not single_prompt:
+                while 1:              
+                    if c >= 10:
+                        print("Error: Can't reduce prompt length.")
+                        raise Exception("Can't reduce prompt length.")
+                    # print("Trying prompt length...")
+                    prompt_tokens = self.generator.formatter.encode_dialog_prompt(self.dialogues[i])
+                    # prompt_tokens = self.generator.module.formatter.encode_dialog_prompt(prompt)
+                    if len(prompt_tokens) == old_len:
+                        print("Error: Prompt length problem.")
+                        raise Exception("Prompt length problem.")
+                    old_len = len(prompt_tokens)
+                    if len(prompt_tokens) > self.max_seq_len:
+                        c += 1
+                        reduction_success = self.remove_from_context(i)
+                        if not reduction_success:
+                            print("Error: Prompt message is too long.")
+                            raise Exception("Prompt message is too long.")
+                    else:
+                        break    
 
         if self.model == "llama":
             result = self.generator.chat_completion(
@@ -150,8 +152,12 @@ class ChatGenerator:
             self.dialogues = [[message_formatted]]
 
     def remove_from_context(self, i=-1, j=0):
+        if len(self.dialogues[i]) <= 1:
+            return False
         if j == 0:
             if self.dialogues[i][0]["role"] == "system":
+                if len(self.dialogues[i]) <= 2:
+                    return False
                 self.dialogues[i] = [self.dialogues[i][0]] + self.dialogues[i][2:]
             else:
                 self.dialogues[i] = self.dialogues[i][1:]   
@@ -159,7 +165,7 @@ class ChatGenerator:
             self.dialogues[i] = self.dialogues[i][:-1]
         else:
             self.dialogues[i] = self.dialogues[i][:j] + self.dialogues[i][j+1:]
-        return len(self.dialogues[i])
+        return True
     
     def add_system_prompt(self, message, i=-1, first_turn=True):
         """
